@@ -2,12 +2,12 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "outDir": "./dist",
+    "outDir": "./dist/esm",
     "skipLibCheck": true,
     "moduleResolution": "Node16",
-    "declaration": true,
-    "sourceMap": true,
-    "declarationMap": true,
+    "declaration": false,
+    "sourceMap": false,
+    "declarationMap": false,
     "esModuleInterop": true,
 
     /* Linting */
