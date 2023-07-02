@@ -32,7 +32,7 @@
     "!**/*.test.*"
   ],
   "scripts": {
-    "build": "del-cli dist && tsc && tsc -p tsconfig.cjs.json && tsc -p tsconfig.types.json",
+    "build": "del-cli dist && tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json && tsc -p tsconfig.types.json",
     "coverage": "vitest run --coverage",
     "fmt": "prettier --write src",
     "lint": "eslint src && prettier --check src",
