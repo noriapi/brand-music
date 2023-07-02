@@ -1,0 +1,36 @@
+import * as PI from "./pi.js";
+import { Int } from "./refined/int.js";
+import { makeAbs } from "./refined/non-negative.js";
+import {
+  isNonNegativeInt,
+  NonNegativeInt,
+} from "./refined/non-negative-int.js";
+
+type Shape = NonNegativeInt;
+export const hasShape = isNonNegativeInt;
+
+export interface SemitonesBrand {
+  readonly Semitones: unique symbol;
+}
+
+/**
+ * Unordered pitch interval
+ *
+ * Number of semitones that separates one pitch from another.
+ * @see {@link https://en.wikipedia.org/wiki/Pitch_interval#Unordered_Pitch_Interval}
+ */
+export type Semitones = NonNegativeInt & SemitonesBrand;
+
+export const mark = (_v: Shape): _v is Semitones => true;
+export const markNum = (v: number): v is Semitones => hasShape(v);
+export const markUnknown = (v: unknown): v is Semitones => hasShape(v);
+
+export const from = (v: Shape) => v as Semitones;
+export const fromNum = (v: number) => (markNum(v) ? v : undefined);
+export const fromIntAbs = (v: Int) => from(makeAbs(v));
+export const fromUnknown = (v: unknown) => (markUnknown(v) ? v : undefined);
+
+const const_ = <T>(v: T) => v as T & Semitones;
+export const MIN = const_(0);
+
+export const fromPi = (pi: PI.PitchInterval) => fromIntAbs(pi);

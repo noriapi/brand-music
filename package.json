@@ -1,0 +1,36 @@
+{
+  "name": "brand-music",
+  "version": "0.1.0",
+  "description": "Strongly typed music theory library",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src && prettier --check src",
+    "lint:fix": "eslint --fix src",
+    "fmt": "prettier --write src",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "files": [
+    "dist",
+    "src",
+    "!**/*.test.*"
+  ],
+  "devDependencies": {
+    "@fast-check/vitest": "^0.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "@vitest/coverage-v8": "^0.32.2",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.6",
+    "vitest": "^0.32.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
