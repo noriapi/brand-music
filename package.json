@@ -4,15 +4,35 @@
   "description": "Strongly typed music theory library",
   "license": "MIT",
   "type": "module",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./*": {
+      "require": "./dist/cjs/*.js",
+      "import": "./dist/esm/*.js",
+      "types": "./dist/types/*.d.ts"
+    },
+    "./*.js": {
+      "require": "./dist/cjs/*.js",
+      "import": "./dist/esm/*.js",
+      "types": "./dist/types/*.d.ts"
+    },
+    "./util": null,
+    "./util.js": null,
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist",
     "src",
     "!**/*.test.*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "del-cli dist && tsc && tsc -p tsconfig.cjs.json && tsc -p tsconfig.types.json",
     "coverage": "vitest run --coverage",
     "fmt": "prettier --write src",
     "lint": "eslint src && prettier --check src",
@@ -24,6 +44,7 @@
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "@vitest/coverage-v8": "^0.32.2",
+    "del-cli": "^5.0.0",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
