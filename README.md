@@ -6,27 +6,34 @@ Strongly typed music theory library.
 
 - Pitches
 
-  - `MidiNoteNumber`: int (0-127)
+  - `MidiNoteNumber`: Int (0-127)
 
-  - `PitchClass`: int (0-11)
-    Integer representation of pitch class
+  - `PitchClass`: Int (0-11)
 
-  - `PitchClassSet` int (0-4095)
+    Integer representation of [pitch class](https://en.wikipedia.org/wiki/Pitch_class)
+
+  - `PitchClassSet` Int (0-4095)
+
     Bit set of `PitchClass`
 
 - Intervals
 
-  - `PitchInterval`: int
-    Ordered pitch interval
+  - `PitchInterval`: Int
 
-  - `Semitones`: int (0-)
-    Unordered pitch interval
+    [Ordered pitch interval](https://en.wikipedia.org/wiki/Pitch_interval#Ordered_Pitch_Interval)
+
+  - `Semitones`: Int (0-)
+
+    [Unordered pitch interval](https://en.wikipedia.org/wiki/Pitch_interval#Unordered_Pitch_Interval)
 
   - `PitchIntervalClass`: int (0-11)
-    Ordered pitch-class interval
 
-  - `IntervalClass` int (0-6)
-    Unordered pitch-class interval
+    [Ordered pitch-class interval](<https://en.wikipedia.org/wiki/Pitch_interval#Ordered_pitch-class_intervals_('pitch_interval_class;_PIC')>)
 
-  - `PitchIntervalClassSet`: int (0-4095)
+  - `IntervalClass` Int (0-6)
+
+    [Unordered pitch-class interval](<https://en.wikipedia.org/wiki/Pitch_interval#Unordered_pitch-class_intervals_('interval_class;_IC')>)
+
+  - `PitchIntervalClassSet`: Int (0-4095)
+
     Bit set of `PitchIntervalClass`
