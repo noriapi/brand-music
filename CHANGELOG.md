@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/noriapi/brand-music/compare/v0.2.0...v0.2.1) (2023-07-03)
+
+
+### Miscellaneous Chores
+
+* release 0.2.1 ([#10](https://github.com/noriapi/brand-music/issues/10)) ([693edba](https://github.com/noriapi/brand-music/commit/693edba1d6fd7f3f7330fc2d37b4c7320a9020be))
+
 ## 0.2.0 (2023-07-03)
 
 
