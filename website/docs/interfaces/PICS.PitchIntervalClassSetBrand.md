@@ -15,4 +15,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[pics.ts:6](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L6)
+[pics.ts:6](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L6)

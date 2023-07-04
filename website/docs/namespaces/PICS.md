@@ -24,7 +24,7 @@ Renames and re-exports [pics](../modules.md#pics)
 
 #### Defined in
 
-[pics.ts:9](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L9)
+[pics.ts:9](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L9)
 
 ## Variables
 
@@ -34,7 +34,7 @@ Renames and re-exports [pics](../modules.md#pics)
 
 #### Defined in
 
-[pics.ts:13](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L13)
+[pics.ts:13](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L13)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[pics.ts:12](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L12)
+[pics.ts:12](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L12)
 
 ## Functions
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[pics.ts:52](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L52)
+[pics.ts:52](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L52)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[pics.ts:11](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L11)
+[pics.ts:11](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L11)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[pics.ts:44](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L44)
+[pics.ts:44](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L44)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[pics.ts:18](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L18)
+[pics.ts:18](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L18)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[pics.ts:20](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L20)
+[pics.ts:20](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L20)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[pics.ts:21](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L21)
+[pics.ts:21](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L21)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[pics.ts:49](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L49)
+[pics.ts:49](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L49)
 
 ___
 
@@ -220,7 +220,7 @@ ___
 
 #### Defined in
 
-[pics.ts:34](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L34)
+[pics.ts:34](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L34)
 
 ___
 
@@ -241,7 +241,7 @@ ___
 
 #### Defined in
 
-[pics.ts:66](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L66)
+[pics.ts:66](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L66)
 
 ___
 
@@ -262,7 +262,7 @@ ___
 
 #### Defined in
 
-[pics.ts:61](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L61)
+[pics.ts:61](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L61)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 #### Defined in
 
-[pics.ts:55](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L55)
+[pics.ts:55](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L55)
 
 ___
 
@@ -304,7 +304,7 @@ ___
 
 #### Defined in
 
-[pics.ts:39](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L39)
+[pics.ts:39](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L39)
 
 ___
 
@@ -325,7 +325,7 @@ ___
 
 #### Defined in
 
-[pics.ts:58](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L58)
+[pics.ts:58](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L58)
 
 ___
 
@@ -345,7 +345,7 @@ ___
 
 #### Defined in
 
-[pics.ts:28](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L28)
+[pics.ts:28](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L28)
 
 ___
 
@@ -366,7 +366,7 @@ ___
 
 #### Defined in
 
-[pics.ts:31](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L31)
+[pics.ts:31](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L31)
 
 ___
 
@@ -386,4 +386,4 @@ ___
 
 #### Defined in
 
-[pics.ts:71](https://github.com/noriapi/brand-music/blob/56d0169/src/pics.ts#L71)
+[pics.ts:71](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pics.ts#L71)
