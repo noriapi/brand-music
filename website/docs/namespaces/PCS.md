@@ -10,12 +10,6 @@ custom_edit_url: null
 
 - [PitchClassSetBrand](../interfaces/PCS.PitchClassSetBrand.md)
 
-## References
-
-### from
-
-Renames and re-exports [pcs](../modules.md#pcs)
-
 ## Type Aliases
 
 ### PitchClassSet
@@ -24,7 +18,7 @@ Renames and re-exports [pcs](../modules.md#pcs)
 
 #### Defined in
 
-[pcs.ts:9](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L9)
+[pcs.ts:9](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L9)
 
 ## Variables
 
@@ -34,7 +28,7 @@ Renames and re-exports [pcs](../modules.md#pcs)
 
 #### Defined in
 
-[pcs.ts:13](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L13)
+[pcs.ts:13](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L13)
 
 ___
 
@@ -44,7 +38,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:12](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L12)
+[pcs.ts:12](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L12)
 
 ## Functions
 
@@ -65,7 +59,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:43](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L43)
+[pcs.ts:43](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L43)
 
 ___
 
@@ -91,7 +85,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:11](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L11)
+[pcs.ts:11](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L11)
 
 ___
 
@@ -112,7 +106,27 @@ ___
 
 #### Defined in
 
-[pcs.ts:37](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L37)
+[pcs.ts:37](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L37)
+
+___
+
+### from
+
+▸ **from**(`...values`): [`PitchClassSet`](PCS.md#pitchclassset)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...values` | [`PitchClass`](PC.md#pitchclass)[] |
+
+#### Returns
+
+[`PitchClassSet`](PCS.md#pitchclassset)
+
+#### Defined in
+
+[pcs.ts:24](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L24)
 
 ___
 
@@ -138,7 +152,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:18](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L18)
+[pcs.ts:18](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L18)
 
 ___
 
@@ -158,7 +172,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:19](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L19)
+[pcs.ts:19](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L19)
 
 ___
 
@@ -178,7 +192,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:20](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L20)
+[pcs.ts:20](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L20)
 
 ___
 
@@ -199,7 +213,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:40](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L40)
+[pcs.ts:40](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L40)
 
 ___
 
@@ -220,7 +234,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:31](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L31)
+[pcs.ts:31](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L31)
 
 ___
 
@@ -241,7 +255,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:54](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L54)
+[pcs.ts:54](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L54)
 
 ___
 
@@ -262,7 +276,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:51](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L51)
+[pcs.ts:51](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L51)
 
 ___
 
@@ -283,7 +297,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:45](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L45)
+[pcs.ts:45](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L45)
 
 ___
 
@@ -304,7 +318,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:34](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L34)
+[pcs.ts:34](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L34)
 
 ___
 
@@ -325,7 +339,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:48](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L48)
+[pcs.ts:48](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L48)
 
 ___
 
@@ -345,7 +359,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:26](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L26)
+[pcs.ts:26](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L26)
 
 ___
 
@@ -366,7 +380,7 @@ ___
 
 #### Defined in
 
-[pcs.ts:28](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L28)
+[pcs.ts:28](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L28)
 
 ___
 
@@ -386,4 +400,4 @@ ___
 
 #### Defined in
 
-[pcs.ts:57](https://github.com/noriapi/brand-music/blob/dfa1322/src/pcs.ts#L57)
+[pcs.ts:57](https://github.com/noriapi/brand-music/blob/d3723cb/src/pcs.ts#L57)

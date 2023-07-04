@@ -10,12 +10,6 @@ custom_edit_url: null
 
 - [SemitonesBrand](../interfaces/S.SemitonesBrand.md)
 
-## References
-
-### from
-
-Renames and re-exports [semitones](../modules.md#semitones)
-
 ## Type Aliases
 
 ### Semitones
@@ -32,7 +26,7 @@ Number of semitones that separates one pitch from another.
 
 #### Defined in
 
-[semitones.ts:22](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L22)
+[semitones.ts:22](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L22)
 
 ## Variables
 
@@ -42,9 +36,29 @@ Number of semitones that separates one pitch from another.
 
 #### Defined in
 
-[semitones.ts:34](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L34)
+[semitones.ts:34](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L34)
 
 ## Functions
+
+### from
+
+▸ **from**(`v`): [`Semitones`](S.md#semitones)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | `NonNegativeInt` |
+
+#### Returns
+
+[`Semitones`](S.md#semitones)
+
+#### Defined in
+
+[semitones.ts:28](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L28)
+
+___
 
 ### fromIntAbs
 
@@ -62,7 +76,7 @@ Number of semitones that separates one pitch from another.
 
 #### Defined in
 
-[semitones.ts:30](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L30)
+[semitones.ts:30](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L30)
 
 ___
 
@@ -82,7 +96,7 @@ ___
 
 #### Defined in
 
-[semitones.ts:29](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L29)
+[semitones.ts:29](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L29)
 
 ___
 
@@ -102,7 +116,7 @@ ___
 
 #### Defined in
 
-[semitones.ts:36](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L36)
+[semitones.ts:36](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L36)
 
 ___
 
@@ -122,7 +136,7 @@ ___
 
 #### Defined in
 
-[semitones.ts:31](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L31)
+[semitones.ts:31](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L31)
 
 ___
 
@@ -142,7 +156,7 @@ v is NonNegativeInt
 
 #### Defined in
 
-[refined/non-negative-int.ts:6](https://github.com/noriapi/brand-music/blob/dfa1322/src/refined/non-negative-int.ts#L6)
+[refined/non-negative-int.ts:6](https://github.com/noriapi/brand-music/blob/d3723cb/src/refined/non-negative-int.ts#L6)
 
 ___
 
@@ -162,7 +176,7 @@ ___
 
 #### Defined in
 
-[semitones.ts:24](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L24)
+[semitones.ts:24](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L24)
 
 ___
 
@@ -182,7 +196,7 @@ v is Semitones
 
 #### Defined in
 
-[semitones.ts:25](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L25)
+[semitones.ts:25](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L25)
 
 ___
 
@@ -202,4 +216,4 @@ v is Semitones
 
 #### Defined in
 
-[semitones.ts:26](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L26)
+[semitones.ts:26](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L26)

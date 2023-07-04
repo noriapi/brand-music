@@ -15,4 +15,4 @@ custom_edit_url: null
 
 #### Defined in
 
-[semitones.ts:13](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L13)
+[semitones.ts:13](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L13)
