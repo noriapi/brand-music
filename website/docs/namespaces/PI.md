@@ -10,18 +10,6 @@ custom_edit_url: null
 
 - [PitchIntervalBrand](../interfaces/PI.PitchIntervalBrand.md)
 
-## References
-
-### from
-
-Renames and re-exports [pi](../modules.md#pi)
-
-___
-
-### fromNum
-
-Renames and re-exports [mayPi](../modules.md#maypi)
-
 ## Type Aliases
 
 ### PitchInterval
@@ -38,7 +26,7 @@ Number of semitones that separates one pitch from another, upward or downward.
 
 #### Defined in
 
-[pi.ts:22](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L22)
+[pi.ts:22](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L22)
 
 ## Functions
 
@@ -59,7 +47,7 @@ Number of semitones that separates one pitch from another, upward or downward.
 
 #### Defined in
 
-[pi.ts:35](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L35)
+[pi.ts:35](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L35)
 
 ___
 
@@ -80,7 +68,7 @@ ___
 
 #### Defined in
 
-[pi.ts:36](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L36)
+[pi.ts:36](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L36)
 
 ___
 
@@ -101,7 +89,7 @@ ___
 
 #### Defined in
 
-[pi.ts:62](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L62)
+[pi.ts:62](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L62)
 
 ___
 
@@ -121,7 +109,7 @@ ___
 
 #### Defined in
 
-[pi.ts:67](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L67)
+[pi.ts:67](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L67)
 
 ___
 
@@ -142,7 +130,7 @@ ___
 
 #### Defined in
 
-[pi.ts:55](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L55)
+[pi.ts:55](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L55)
 
 ___
 
@@ -163,7 +151,7 @@ ___
 
 #### Defined in
 
-[pi.ts:59](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L59)
+[pi.ts:59](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L59)
 
 ___
 
@@ -184,7 +172,47 @@ ___
 
 #### Defined in
 
-[pi.ts:60](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L60)
+[pi.ts:60](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L60)
+
+___
+
+### from
+
+▸ **from**(`v`): [`PitchInterval`](PI.md#pitchinterval)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | `Int` |
+
+#### Returns
+
+[`PitchInterval`](PI.md#pitchinterval)
+
+#### Defined in
+
+[pi.ts:28](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L28)
+
+___
+
+### fromNum
+
+▸ **fromNum**(`v`): `undefined` \| [`PitchInterval`](PI.md#pitchinterval)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | `number` |
+
+#### Returns
+
+`undefined` \| [`PitchInterval`](PI.md#pitchinterval)
+
+#### Defined in
+
+[pi.ts:29](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L29)
 
 ___
 
@@ -204,7 +232,7 @@ ___
 
 #### Defined in
 
-[pi.ts:30](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L30)
+[pi.ts:30](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L30)
 
 ___
 
@@ -224,7 +252,7 @@ ___
 
 #### Defined in
 
-[pi.ts:31](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L31)
+[pi.ts:31](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L31)
 
 ___
 
@@ -244,7 +272,7 @@ ___
 
 #### Defined in
 
-[pi.ts:32](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L32)
+[pi.ts:32](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L32)
 
 ___
 
@@ -270,7 +298,7 @@ v is T & number & IntBrand
 
 #### Defined in
 
-[refined/int.ts:7](https://github.com/noriapi/brand-music/blob/dfa1322/src/refined/int.ts#L7)
+[refined/int.ts:7](https://github.com/noriapi/brand-music/blob/d3723cb/src/refined/int.ts#L7)
 
 ___
 
@@ -290,7 +318,7 @@ ___
 
 #### Defined in
 
-[pi.ts:24](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L24)
+[pi.ts:24](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L24)
 
 ___
 
@@ -310,7 +338,7 @@ v is PitchInterval
 
 #### Defined in
 
-[pi.ts:25](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L25)
+[pi.ts:25](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L25)
 
 ___
 
@@ -330,7 +358,7 @@ v is PitchInterval
 
 #### Defined in
 
-[pi.ts:26](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L26)
+[pi.ts:26](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L26)
 
 ___
 
@@ -351,7 +379,7 @@ ___
 
 #### Defined in
 
-[pi.ts:47](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L47)
+[pi.ts:47](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L47)
 
 ___
 
@@ -372,7 +400,7 @@ ___
 
 #### Defined in
 
-[pi.ts:48](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L48)
+[pi.ts:48](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L48)
 
 ___
 
@@ -393,7 +421,7 @@ ___
 
 #### Defined in
 
-[pi.ts:52](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L52)
+[pi.ts:52](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L52)
 
 ___
 
@@ -414,7 +442,7 @@ ___
 
 #### Defined in
 
-[pi.ts:53](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L53)
+[pi.ts:53](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L53)
 
 ___
 
@@ -434,7 +462,7 @@ ___
 
 #### Defined in
 
-[pi.ts:65](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L65)
+[pi.ts:65](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L65)
 
 ___
 
@@ -454,7 +482,7 @@ ___
 
 #### Defined in
 
-[pic.ts:40](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L40)
+[pic.ts:40](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L40)
 
 ___
 
@@ -474,7 +502,7 @@ ___
 
 #### Defined in
 
-[semitones.ts:36](https://github.com/noriapi/brand-music/blob/dfa1322/src/semitones.ts#L36)
+[semitones.ts:36](https://github.com/noriapi/brand-music/blob/d3723cb/src/semitones.ts#L36)
 
 ___
 
@@ -495,7 +523,7 @@ ___
 
 #### Defined in
 
-[pi.ts:41](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L41)
+[pi.ts:41](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L41)
 
 ___
 
@@ -516,4 +544,4 @@ ___
 
 #### Defined in
 
-[pi.ts:42](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L42)
+[pi.ts:42](https://github.com/noriapi/brand-music/blob/d3723cb/src/pi.ts#L42)

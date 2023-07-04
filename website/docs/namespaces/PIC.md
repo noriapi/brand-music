@@ -10,18 +10,6 @@ custom_edit_url: null
 
 - [PitchIntervalClassBrand](../interfaces/PIC.PitchIntervalClassBrand.md)
 
-## References
-
-### from
-
-Renames and re-exports [pic](../modules.md#pic)
-
-___
-
-### fromNum
-
-Renames and re-exports [mayPic](../modules.md#maypic)
-
 ## Type Aliases
 
 ### PitchIntervalClass
@@ -38,7 +26,7 @@ Number of ascending semitones from one pitch-class to the next, ordered from low
 
 #### Defined in
 
-[pic.ts:21](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L21)
+[pic.ts:21](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L21)
 
 ## Variables
 
@@ -48,7 +36,7 @@ Number of ascending semitones from one pitch-class to the next, ordered from low
 
 #### Defined in
 
-[pic.ts:36](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L36)
+[pic.ts:36](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L36)
 
 ___
 
@@ -58,7 +46,7 @@ ___
 
 #### Defined in
 
-[pic.ts:35](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L35)
+[pic.ts:35](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L35)
 
 ___
 
@@ -68,7 +56,7 @@ ___
 
 #### Defined in
 
-[pic.ts:34](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L34)
+[pic.ts:34](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L34)
 
 ## Functions
 
@@ -89,7 +77,27 @@ ___
 
 #### Defined in
 
-[pic.ts:38](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L38)
+[pic.ts:38](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L38)
+
+___
+
+### from
+
+▸ **from**(`v`): [`PitchIntervalClass`](PIC.md#pitchintervalclass)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | ``0`` \| ``1`` \| ``2`` \| ``3`` \| ``4`` \| ``5`` \| ``6`` \| ``7`` \| ``8`` \| ``9`` \| ``10`` \| ``11`` |
+
+#### Returns
+
+[`PitchIntervalClass`](PIC.md#pitchintervalclass)
+
+#### Defined in
+
+[pic.ts:27](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L27)
 
 ___
 
@@ -109,7 +117,7 @@ ___
 
 #### Defined in
 
-[pic.ts:29](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L29)
+[pic.ts:29](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L29)
 
 ___
 
@@ -129,7 +137,27 @@ ___
 
 #### Defined in
 
-[pic.ts:30](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L30)
+[pic.ts:30](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L30)
+
+___
+
+### fromNum
+
+▸ **fromNum**(`v`): `undefined` \| [`PitchIntervalClass`](PIC.md#pitchintervalclass)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | `number` |
+
+#### Returns
+
+`undefined` \| [`PitchIntervalClass`](PIC.md#pitchintervalclass)
+
+#### Defined in
+
+[pic.ts:28](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L28)
 
 ___
 
@@ -149,7 +177,7 @@ ___
 
 #### Defined in
 
-[pic.ts:40](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L40)
+[pic.ts:40](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L40)
 
 ___
 
@@ -169,7 +197,7 @@ ___
 
 #### Defined in
 
-[pic.ts:31](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L31)
+[pic.ts:31](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L31)
 
 ___
 
@@ -195,7 +223,7 @@ v is Object
 
 #### Defined in
 
-[refined/literal.ts:20](https://github.com/noriapi/brand-music/blob/dfa1322/src/refined/literal.ts#L20)
+[refined/literal.ts:20](https://github.com/noriapi/brand-music/blob/d3723cb/src/refined/literal.ts#L20)
 
 ___
 
@@ -216,7 +244,7 @@ ___
 
 #### Defined in
 
-[pic.ts:42](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L42)
+[pic.ts:42](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L42)
 
 ___
 
@@ -236,7 +264,7 @@ ___
 
 #### Defined in
 
-[pic.ts:23](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L23)
+[pic.ts:23](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L23)
 
 ___
 
@@ -256,7 +284,7 @@ v is PitchIntervalClass
 
 #### Defined in
 
-[pic.ts:24](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L24)
+[pic.ts:24](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L24)
 
 ___
 
@@ -276,4 +304,4 @@ v is PitchIntervalClass
 
 #### Defined in
 
-[pic.ts:25](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L25)
+[pic.ts:25](https://github.com/noriapi/brand-music/blob/d3723cb/src/pic.ts#L25)

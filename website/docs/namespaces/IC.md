@@ -10,18 +10,6 @@ custom_edit_url: null
 
 - [IntervalClassBrand](../interfaces/IC.IntervalClassBrand.md)
 
-## References
-
-### from
-
-Renames and re-exports [ic](../modules.md#ic)
-
-___
-
-### fromNum
-
-Renames and re-exports [mayIc](../modules.md#mayic)
-
 ## Type Aliases
 
 ### IntervalClass
@@ -38,7 +26,7 @@ Number of ascending semitones from one pitch-class to the next, ordered from low
 
 #### Defined in
 
-[ic.ts:21](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L21)
+[ic.ts:21](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L21)
 
 ## Variables
 
@@ -48,7 +36,7 @@ Number of ascending semitones from one pitch-class to the next, ordered from low
 
 #### Defined in
 
-[ic.ts:36](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L36)
+[ic.ts:36](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L36)
 
 ___
 
@@ -58,7 +46,7 @@ ___
 
 #### Defined in
 
-[ic.ts:35](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L35)
+[ic.ts:35](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L35)
 
 ___
 
@@ -68,7 +56,7 @@ ___
 
 #### Defined in
 
-[ic.ts:34](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L34)
+[ic.ts:34](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L34)
 
 ## Functions
 
@@ -89,7 +77,27 @@ ___
 
 #### Defined in
 
-[ic.ts:40](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L40)
+[ic.ts:40](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L40)
+
+___
+
+### from
+
+▸ **from**(`v`): [`IntervalClass`](IC.md#intervalclass)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | ``0`` \| ``1`` \| ``2`` \| ``3`` \| ``4`` \| ``5`` \| ``6`` |
+
+#### Returns
+
+[`IntervalClass`](IC.md#intervalclass)
+
+#### Defined in
+
+[ic.ts:27](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L27)
 
 ___
 
@@ -109,7 +117,7 @@ ___
 
 #### Defined in
 
-[ic.ts:29](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L29)
+[ic.ts:29](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L29)
 
 ___
 
@@ -129,7 +137,27 @@ ___
 
 #### Defined in
 
-[ic.ts:30](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L30)
+[ic.ts:30](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L30)
+
+___
+
+### fromNum
+
+▸ **fromNum**(`v`): `undefined` \| [`IntervalClass`](IC.md#intervalclass)
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `v` | `number` |
+
+#### Returns
+
+`undefined` \| [`IntervalClass`](IC.md#intervalclass)
+
+#### Defined in
+
+[ic.ts:28](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L28)
 
 ___
 
@@ -149,7 +177,7 @@ ___
 
 #### Defined in
 
-[ic.ts:38](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L38)
+[ic.ts:38](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L38)
 
 ___
 
@@ -169,7 +197,7 @@ ___
 
 #### Defined in
 
-[ic.ts:31](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L31)
+[ic.ts:31](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L31)
 
 ___
 
@@ -195,7 +223,7 @@ v is Object
 
 #### Defined in
 
-[refined/literal.ts:20](https://github.com/noriapi/brand-music/blob/dfa1322/src/refined/literal.ts#L20)
+[refined/literal.ts:20](https://github.com/noriapi/brand-music/blob/d3723cb/src/refined/literal.ts#L20)
 
 ___
 
@@ -215,7 +243,7 @@ ___
 
 #### Defined in
 
-[ic.ts:23](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L23)
+[ic.ts:23](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L23)
 
 ___
 
@@ -235,7 +263,7 @@ v is IntervalClass
 
 #### Defined in
 
-[ic.ts:24](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L24)
+[ic.ts:24](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L24)
 
 ___
 
@@ -255,4 +283,4 @@ v is IntervalClass
 
 #### Defined in
 
-[ic.ts:25](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L25)
+[ic.ts:25](https://github.com/noriapi/brand-music/blob/d3723cb/src/ic.ts#L25)
