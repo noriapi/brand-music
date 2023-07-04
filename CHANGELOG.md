@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/noriapi/brand-music/compare/v0.3.3...v0.3.4) (2023-07-04)
+
+
+### Miscellaneous Chores
+
+* add permissions monitor to each jobs ([#28](https://github.com/noriapi/brand-music/issues/28)) ([48c1e82](https://github.com/noriapi/brand-music/commit/48c1e8228b66155cfac85a9f16efe8b98b7504aa))
+
 ## [0.3.3](https://github.com/noriapi/brand-music/compare/v0.3.2...v0.3.3) (2023-07-04)
 
 
