@@ -1,6 +1,6 @@
 {
   "name": "brand-music",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Strongly typed music theory library",
   "license": "MIT",
   "type": "module",
