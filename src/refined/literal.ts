@@ -18,7 +18,9 @@ export type RangedInt<
 export const is =
   <S extends number, E extends number>(start: S, end: E) =>
   <T>(v: T): v is T & RangedInt<S, E> =>
-    Number.isSafeInteger(v) && start <= (v as number) && (v as number) <= end;
+    Number.isSafeInteger(v) &&
+    start <= (v as unknown as number) &&
+    (v as unknown as number) <= end;
 
 export const clamp =
   <S extends number, E extends number>(start: S, end: E) =>
