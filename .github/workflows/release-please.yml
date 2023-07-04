@@ -6,10 +6,9 @@ on:
 
 jobs:
   release-please:
-    permissions:
-      contents: write # to create release commit (google-github-actions/release-please-action)
-      pull-requests: write # to create release PR (google-github-actions/release-please-action)
     runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release_please.outputs.release_created }}
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
@@ -18,19 +17,21 @@ jobs:
           release-type: node
           package-name: brand-music
 
+  publish:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release-created }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Checkout
-        if: ${{ steps.release.outputs.release_created }}
         uses: actions/checkout@v3
 
       - name: Install Node.js
-        if: ${{ steps.release.outputs.release_created }}
         uses: actions/setup-node@v3
         with:
           node-version: 16
           registry-url: "https://registry.npmjs.org"
 
       - uses: pnpm/action-setup@v2
-        if: ${{ steps.release.outputs.release_created }}
         name: Install pnpm
         id: pnpm-install
         with:
@@ -38,14 +39,12 @@ jobs:
           run_install: false
 
       - name: Get pnpm store directory
-        if: ${{ steps.release.outputs.release_created }}
         id: pnpm-cache
         shell: bash
         run: |
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 
       - uses: actions/cache@v3
-        if: ${{ steps.release.outputs.release_created }}
         name: Setup pnpm cache
         with:
           path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
@@ -54,14 +53,62 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        if: ${{ steps.release.outputs.release_created }}
         run: pnpm install
 
       - name: Build
         run: pnpm build
 
       - name: Release
-        if: ${{ steps.release.outputs.release_created }}
         run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+  deploy-doc:
+    name: Deploy to GitHub Pages
+    needs: [release-please, publish]
+    if: ${{ needs.release-please.outputs.release-created }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: website
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build website
+        run: pnpm build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
