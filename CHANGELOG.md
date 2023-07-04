@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.0](https://github.com/noriapi/brand-music/compare/v0.2.3...v0.3.0) (2023-07-04)
+
+
+### Bug Fixes
+
+* fix exports ([#16](https://github.com/noriapi/brand-music/issues/16)) ([7334141](https://github.com/noriapi/brand-music/commit/733414174b96d07010aaff6a2d1c57aa109641c1))
+
+
+### Miscellaneous Chores
+
+* release 0.3.0 ([#18](https://github.com/noriapi/brand-music/issues/18)) ([d8f1b0f](https://github.com/noriapi/brand-music/commit/d8f1b0fb11d6172ec7c6f5e30218eeae5de154ec))
+
 ## [0.2.3](https://github.com/noriapi/brand-music/compare/v0.2.2...v0.2.3) (2023-07-03)
 
 
