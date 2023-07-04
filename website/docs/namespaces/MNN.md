@@ -30,7 +30,7 @@ Renames and re-exports [mayMnn](../modules.md#maymnn)
 
 #### Defined in
 
-[mnn.ts:14](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L14)
+[mnn.ts:14](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L14)
 
 ## Variables
 
@@ -40,7 +40,7 @@ Renames and re-exports [mayMnn](../modules.md#maymnn)
 
 #### Defined in
 
-[mnn.ts:29](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L29)
+[mnn.ts:29](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L29)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:54](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L54)
+[mnn.ts:54](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L54)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:53](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L53)
+[mnn.ts:53](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L53)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:55](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L55)
+[mnn.ts:55](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L55)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:28](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L28)
+[mnn.ts:28](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L28)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:27](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L27)
+[mnn.ts:27](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L27)
 
 ## Functions
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:22](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L22)
+[mnn.ts:22](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L22)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:23](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L23)
+[mnn.ts:23](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L23)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:24](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L24)
+[mnn.ts:24](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L24)
 
 ___
 
@@ -176,7 +176,7 @@ v is Object
 
 #### Defined in
 
-[refined/literal.ts:20](https://github.com/noriapi/brand-music/blob/8bafdc9/src/refined/literal.ts#L20)
+[refined/literal.ts:20](https://github.com/noriapi/brand-music/blob/dfa1322/src/refined/literal.ts#L20)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:16](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L16)
+[mnn.ts:16](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L16)
 
 ___
 
@@ -216,7 +216,7 @@ v is MidiNoteNumber
 
 #### Defined in
 
-[mnn.ts:17](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L17)
+[mnn.ts:17](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L17)
 
 ___
 
@@ -236,7 +236,7 @@ v is MidiNoteNumber
 
 #### Defined in
 
-[mnn.ts:18](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L18)
+[mnn.ts:18](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L18)
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 #### Defined in
 
-[pc.ts:47](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L47)
+[pc.ts:47](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L47)
 
 ___
 
@@ -277,7 +277,7 @@ ___
 
 #### Defined in
 
-[pi.ts:62](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pi.ts#L62)
+[pi.ts:62](https://github.com/noriapi/brand-music/blob/dfa1322/src/pi.ts#L62)
 
 ___
 
@@ -298,7 +298,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:33](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L33)
+[mnn.ts:33](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L33)
 
 ___
 
@@ -319,7 +319,7 @@ ___
 
 #### Defined in
 
-[mnn.ts:37](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L37)
+[mnn.ts:37](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L37)
 
 ___
 
@@ -340,4 +340,4 @@ ___
 
 #### Defined in
 
-[mnn.ts:41](https://github.com/noriapi/brand-music/blob/8bafdc9/src/mnn.ts#L41)
+[mnn.ts:41](https://github.com/noriapi/brand-music/blob/dfa1322/src/mnn.ts#L41)
