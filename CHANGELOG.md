@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.1](https://github.com/noriapi/brand-music/compare/v0.3.0...v0.3.1) (2023-07-04)
+
+
+### Bug Fixes
+
+* add permission to release-please action ([#21](https://github.com/noriapi/brand-music/issues/21)) ([fa9f6cd](https://github.com/noriapi/brand-music/commit/fa9f6cd7206d844a40e6eecc89d461e2d00ebe78))
+
+
+### Miscellaneous Chores
+
+* deploy documentation site ([#20](https://github.com/noriapi/brand-music/issues/20)) ([2e8320b](https://github.com/noriapi/brand-music/commit/2e8320b9740d16b0e776944a9e3041c62f00205d))
+
 ## [0.3.0](https://github.com/noriapi/brand-music/compare/v0.2.3...v0.3.0) (2023-07-04)
 
 
