@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/noriapi/brand-music/compare/v0.3.2...v0.3.3) (2023-07-04)
+
+
+### Miscellaneous Chores
+
+* add permission to deploy-doc ([#26](https://github.com/noriapi/brand-music/issues/26)) ([2e18b91](https://github.com/noriapi/brand-music/commit/2e18b9130703228064e1756e8bee1262e0d1e1c1))
+
 ## [0.3.2](https://github.com/noriapi/brand-music/compare/v0.3.1...v0.3.2) (2023-07-04)
 
 
