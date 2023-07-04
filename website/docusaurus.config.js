@@ -11,7 +11,7 @@ const config = {
   // favicon: "img/favicon.ico",
 
   url: "https://noriapi.github.io",
-  baseUrl: "/",
+  baseUrl: "/brand-music/",
   projectName: "noriapi.github.io",
   organizationName: "noriapi",
   trailingSlash: false,
