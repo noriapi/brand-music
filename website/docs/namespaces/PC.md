@@ -36,7 +36,7 @@ Integer notation of pitch class
 
 #### Defined in
 
-[pc.ts:21](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L21)
+[pc.ts:21](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L21)
 
 ## Variables
 
@@ -46,7 +46,7 @@ Integer notation of pitch class
 
 #### Defined in
 
-[pc.ts:37](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L37)
+[pc.ts:37](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L37)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[pc.ts:36](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L36)
+[pc.ts:36](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L36)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[pc.ts:35](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L35)
+[pc.ts:35](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L35)
 
 ## Functions
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[pc.ts:29](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L29)
+[pc.ts:29](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L29)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[pc.ts:30](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L30)
+[pc.ts:30](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L30)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[pc.ts:47](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L47)
+[pc.ts:47](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L47)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[pc.ts:31](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L31)
+[pc.ts:31](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L31)
 
 ___
 
@@ -172,7 +172,7 @@ v is Object
 
 #### Defined in
 
-[refined/literal.ts:20](https://github.com/noriapi/brand-music/blob/8bafdc9/src/refined/literal.ts#L20)
+[refined/literal.ts:20](https://github.com/noriapi/brand-music/blob/dfa1322/src/refined/literal.ts#L20)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[ic.ts:40](https://github.com/noriapi/brand-music/blob/8bafdc9/src/ic.ts#L40)
+[ic.ts:40](https://github.com/noriapi/brand-music/blob/dfa1322/src/ic.ts#L40)
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-[pc.ts:44](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L44)
+[pc.ts:44](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L44)
 
 ___
 
@@ -234,7 +234,7 @@ ___
 
 #### Defined in
 
-[pc.ts:23](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L23)
+[pc.ts:23](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L23)
 
 ___
 
@@ -254,7 +254,7 @@ v is PitchClass
 
 #### Defined in
 
-[pc.ts:24](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L24)
+[pc.ts:24](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L24)
 
 ___
 
@@ -274,7 +274,7 @@ v is PitchClass
 
 #### Defined in
 
-[pc.ts:25](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L25)
+[pc.ts:25](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L25)
 
 ___
 
@@ -295,7 +295,7 @@ ___
 
 #### Defined in
 
-[pic.ts:38](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pic.ts#L38)
+[pic.ts:38](https://github.com/noriapi/brand-music/blob/dfa1322/src/pic.ts#L38)
 
 ___
 
@@ -316,4 +316,4 @@ ___
 
 #### Defined in
 
-[pc.ts:39](https://github.com/noriapi/brand-music/blob/8bafdc9/src/pc.ts#L39)
+[pc.ts:39](https://github.com/noriapi/brand-music/blob/dfa1322/src/pc.ts#L39)
