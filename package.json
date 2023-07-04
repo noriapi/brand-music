@@ -6,33 +6,23 @@
   "type": "module",
   "exports": {
     ".": {
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/esm/index.js",
-      "types": "./dist/types/index.d.ts"
+      "import": "./esm/index.js",
+      "require": "./dist/cjs/index.js"
     },
-    "./*": {
-      "require": "./dist/cjs/*.js",
-      "import": "./dist/esm/*.js",
-      "types": "./dist/types/*.d.ts"
-    },
-    "./*.js": {
-      "require": "./dist/cjs/*.js",
-      "import": "./dist/esm/*.js",
-      "types": "./dist/types/*.d.ts"
-    },
-    "./util": null,
-    "./util.js": null,
     "./package.json": "./package.json"
   },
-  "main": "./dist/esm/index.js",
-  "types": "./dist/types/index.d.ts",
+  "main": "./cjs/index.js",
+  "types": "./cjs/index.d.ts",
   "files": [
-    "dist",
+    "esm",
+    "cjs",
     "src",
     "!**/*.test.*"
   ],
   "scripts": {
-    "build": "del-cli dist && tsc -p tsconfig.esm.json && tsc -p tsconfig.cjs.json && tsc -p tsconfig.types.json",
+    "build:esm": "del-cli esm && tsc -p tsconfig.esm.json",
+    "build:cjs": "del-cli cjs && tsc -p tsconfig.cjs.json",
+    "build": "pnpm build:esm && pnpm build:cjs",
     "coverage": "vitest run --coverage",
     "fmt": "prettier --write src",
     "lint": "eslint src && prettier --check src",

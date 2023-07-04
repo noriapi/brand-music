@@ -4,10 +4,7 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "moduleResolution": "Node16",
-    "declaration": false,
-    "sourceMap": false,
-    "declarationMap": false,
-    "esModuleInterop": true,
+    "noEmit": true,
 
     /* Linting */
     "strict": true,
