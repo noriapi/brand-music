@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.5](https://github.com/noriapi/brand-music/compare/v0.3.4...v0.3.5) (2023-07-04)
+
+
+### Miscellaneous Chores
+
+* fix publish_dir ([#30](https://github.com/noriapi/brand-music/issues/30)) ([5d636c9](https://github.com/noriapi/brand-music/commit/5d636c9f15fc448f8a111c0fb388b6cb7f36b0e6))
+
 ## [0.3.4](https://github.com/noriapi/brand-music/compare/v0.3.3...v0.3.4) (2023-07-04)
 
 
