@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.6](https://github.com/noriapi/brand-music/compare/v0.3.5...v0.3.6) (2023-07-04)
+
+
+### Miscellaneous Chores
+
+* **docs:** fix docusaurus baseUrl ([#32](https://github.com/noriapi/brand-music/issues/32)) ([22bffad](https://github.com/noriapi/brand-music/commit/22bffad28e893779119bbf199d36a553c28bbcb7))
+
 ## [0.3.5](https://github.com/noriapi/brand-music/compare/v0.3.4...v0.3.5) (2023-07-04)
 
 
