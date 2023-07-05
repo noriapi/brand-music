@@ -96,5 +96,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Create docs directory
+        run: mkdir docs
+
       - name: Test build website
         run: pnpm build
