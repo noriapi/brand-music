@@ -25,9 +25,10 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["@typescript-eslint", "simple-import-sort"],
+  plugins: ["@typescript-eslint", "simple-import-sort", "eslint-plugin-tsdoc"],
   rules: {
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
+    "tsdoc/syntax": "warn",
   },
 };
