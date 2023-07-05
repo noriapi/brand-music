@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.0](https://github.com/noriapi/brand-music/compare/v0.3.6...v0.4.0) (2023-07-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove aliases ([#35](https://github.com/noriapi/brand-music/issues/35))
+
+### Code Refactoring
+
+* remove aliases ([#35](https://github.com/noriapi/brand-music/issues/35)) ([6d22089](https://github.com/noriapi/brand-music/commit/6d2208986c3f474aa4088ca056d847de4a91061d))
+
 ## [0.3.6](https://github.com/noriapi/brand-music/compare/v0.3.5...v0.3.6) (2023-07-04)
 
 
