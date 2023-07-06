@@ -1,7 +1,7 @@
 import { fc, it } from "@fast-check/vitest";
 import { describe, expect } from "vitest";
 
-import { Int } from "./int.js";
+import type { Int } from "./int.js";
 import { is, modded } from "./literal.js";
 
 const arbRange = () =>
