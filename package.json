@@ -34,7 +34,8 @@
     "esm",
     "cjs",
     "src",
-    "!**/*.test.*"
+    "!**/*.test.*",
+    "!**/*.test-d.*"
   ],
   "scripts": {
     "build": "pnpm build:esm && pnpm build:cjs",
@@ -44,7 +45,8 @@
     "fmt": "prettier --write src",
     "lint": "eslint src && prettier --check src",
     "lint:fix": "eslint --fix src",
-    "test": "vitest"
+    "test": "vitest",
+    "typecheck": "vitest typecheck"
   },
   "devDependencies": {
     "@fast-check/vitest": "^0.0.6",

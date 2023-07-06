@@ -7,5 +7,5 @@
     "declaration": true,
     "declarationMap": true
   },
-  "exclude": ["**/*.test.ts"]
+  "exclude": ["**/*.test.ts", "**/*.test-d.ts"]
 }

@@ -26,3 +26,4 @@ cjs
 *.sw?
 
 coverage
+tsconfig.vitest-temp.json
