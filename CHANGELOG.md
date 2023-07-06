@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1](https://github.com/noriapi/brand-music/compare/v0.4.0...v0.4.1) (2023-07-06)
+
+
+### Bug Fixes
+
+* isTwelveBits ([#41](https://github.com/noriapi/brand-music/issues/41)) ([f1f4e6d](https://github.com/noriapi/brand-music/commit/f1f4e6d0dd9caac05daa414d6c13a5361a450312))
+* make makeAbs handle NaN ([#44](https://github.com/noriapi/brand-music/issues/44)) ([0a73ad7](https://github.com/noriapi/brand-music/commit/0a73ad7e1a906ed48cec35092c2822530bb6f583))
+
 ## [0.4.0](https://github.com/noriapi/brand-music/compare/v0.3.6...v0.4.0) (2023-07-05)
 
 
