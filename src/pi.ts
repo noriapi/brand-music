@@ -63,7 +63,9 @@ export const between = (from: MidiNoteNumber, to: MidiNoteNumber) =>
   (to - from) as PitchInterval;
 
 export const octaves = (pi: PitchInterval): NonNegativeInt =>
-  makeAbs(I.makeTrunc(pi / 12));
+  pi === 0
+    ? (0 as NonNegativeInt)
+    : (makeAbs(I.makeTrunc(pi / 12)) as NonNegativeInt);
 export const direction = (pi: PitchInterval) => (pi < 0 ? -1 : pi > 0 ? 1 : 0);
 
 export const pic = PIC.fromPi;
