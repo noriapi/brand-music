@@ -2,7 +2,24 @@
   "name": "brand-music",
   "version": "0.4.0",
   "description": "Strongly typed music theory library",
+  "keywords": [
+    "music",
+    "theory",
+    "music-theory",
+    "branded-types"
+  ],
+  "homepage": "https://github.com/noriapi/brand-music#readme",
+  "bugs": {
+    "url": "https://github.com/noriapi/brand-music/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noriapi/brand-music.git"
+  },
   "license": "MIT",
+  "author": {
+    "name": "noriapi"
+  },
   "type": "module",
   "exports": {
     ".": {
@@ -20,9 +37,9 @@
     "!**/*.test.*"
   ],
   "scripts": {
-    "build:esm": "del-cli esm && tsc -p tsconfig.esm.json",
-    "build:cjs": "del-cli cjs && tsc -p tsconfig.cjs.json",
     "build": "pnpm build:esm && pnpm build:cjs",
+    "build:cjs": "del-cli cjs && tsc -p tsconfig.cjs.json",
+    "build:esm": "del-cli esm && tsc -p tsconfig.esm.json",
     "coverage": "vitest run --coverage",
     "fmt": "prettier --write src",
     "lint": "eslint src && prettier --check src",
