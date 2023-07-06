@@ -7,4 +7,4 @@ export interface TwelveBitsBrand {
 export type TwelveBits = NonNegativeInt & TwelveBitsBrand;
 
 export const isTwelveBits = (v: unknown): v is TwelveBits =>
-  isNonNegativeInt(v) && v < (2 ^ 12);
+  isNonNegativeInt(v) && v < 1 << 12;
