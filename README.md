@@ -1,5 +1,7 @@
 # brand-music
 
+![npm](https://img.shields.io/npm/v/brand-music)
+
 `brand-music` is a TypeScript library which provides [branded-types](https://github.com/Microsoft/TypeScript/blob/7b48a182c05ea4dea81bab73ecbbe9e013a79e99/src/compiler/types.ts#L693-L698) related to music theory.
 
 [Documentation](https://noriapi.github.io/brand-music/)
