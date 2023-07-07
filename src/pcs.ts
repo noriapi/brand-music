@@ -1,63 +1,54 @@
 import { PitchClass } from "./pc.js";
 import * as PC from "./pc.js";
-import {
-  isTwelveBits,
-  PartialTwelveBits,
-  TwelveBits,
-} from "./refined/twelve-bits.js";
+import * as TB from "./refined/twelve-bits.js";
 
 export interface PitchClassSetBrand {
   readonly PitchClassSet: unique symbol;
 }
 
-export type PitchClassSet = TwelveBits & PitchClassSetBrand;
+export type PitchClassSet = TB.TwelveBits & PitchClassSetBrand;
 
-export const const_ = <T>(v: T) => v as T & PitchClassSet;
-export const EMPTY = const_(0);
-export const ALL = const_(
-  //B A G FE D C
-  0b111111111111
-);
-
-export const fromRaw = <T extends TwelveBits | PartialTwelveBits>(v: T) =>
-  v as T & PitchClassSet;
-export const fromRawMasked = (v: number) => (v & ALL) as PitchClassSet;
+export const fromRaw = (v: TB.TwelveBits | TB.PartialTwelveBits) =>
+  v as PitchClassSet;
+export const fromRawMasked = (v: number) => fromRaw(TB.masked(v));
 export const fromRawUnknown = (v: unknown) =>
-  isTwelveBits(v) ? fromRaw(v) : undefined;
+  TB.isTwelveBits(v) ? fromRaw(v) : undefined;
 
-const one = (pc: PitchClass) => (1 << pc) as PitchClassSet;
-export const from = (...values: PitchClass[]) => values.map(one).reduce(union);
+export const EMPTY = fromRaw(TB.EMPTY);
+export const ALL = fromRaw(TB.ALL);
 
-export const toggleAll = (pcs: PitchClassSet) => (~pcs & ALL) as PitchClassSet;
+export const from = (...values: PitchClass[]) =>
+  fromRaw(TB.fromValues(...values));
+
+export const toggleAll = (pcs: PitchClassSet) => fromRaw(TB.complement(pcs));
 
 export const union = (a: PitchClassSet, b: PitchClassSet) =>
-  (a | b) as PitchClassSet;
+  fromRaw(TB.union(a, b));
 
 export const intersection = (a: PitchClassSet, b: PitchClassSet) =>
-  (a & b) as PitchClassSet;
+  fromRaw(TB.intersection(a, b));
 
 export const symmetricDifference = (a: PitchClassSet, b: PitchClassSet) =>
-  (a ^ b) as PitchClassSet;
+  fromRaw(TB.symmetricDifference(a, b));
 
 export const difference = (a: PitchClassSet, b: PitchClassSet) =>
-  intersection(a, toggleAll(b));
+  fromRaw(TB.difference(a, b));
 
-export const has = (pcs: PitchClassSet, pc: PitchClass) =>
-  Boolean(intersection(pcs, from(pc)));
+export const has = (pcs: PitchClassSet, pc: PitchClass) => TB.has(pcs, pc);
 
-export const add = (pcs: PitchClassSet, pc: PitchClass) => union(pcs, from(pc));
+export const add = (pcs: PitchClassSet, pc: PitchClass) =>
+  fromRaw(TB.add(pcs, pc));
 
 export const remove = (pcs: PitchClassSet, pc: PitchClass) =>
-  intersection(pcs, toggleAll(from(pc)));
+  fromRaw(TB.remove(pcs, pc));
 
 export const toggle = (pcs: PitchClassSet, pc: PitchClass) =>
-  symmetricDifference(pcs, from(pc));
+  fromRaw(TB.toggle(pcs, pc));
 
 export const isSuperset = (value: PitchClassSet, of: PitchClassSet) =>
-  !intersection(toggleAll(value), of);
+  TB.isSuperset(value, of);
 
 export const isSubset = (value: PitchClassSet, of: PitchClassSet) =>
-  isSuperset(of, value);
+  TB.isSubset(value, of);
 
-export const values = (pcs: PitchClassSet) =>
-  PC.ALL.filter((pc) => has(pcs, pc));
+export const values = (pcs: PitchClassSet) => TB.values(pcs).map(PC.from);

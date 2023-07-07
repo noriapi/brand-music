@@ -1,3 +1,4 @@
+import { all, RangedNat } from "./literal.js";
 import { isNonNegativeInt, NonNegativeInt } from "./non-negative-int.js";
 
 export interface TwelveBitsBrand {
@@ -35,3 +36,45 @@ export type PartialTwelveBits =
   | 0b101111111111
   | 0b011111111111
   | 0b111111111111;
+
+export type Value = RangedNat<0, 11>;
+
+export const EMPTY = 0 as TwelveBits;
+export const ALL = 0b111111111111 as TwelveBits;
+
+export const masked = (v: number) => (v & ALL) as TwelveBits;
+
+const one = (value: Value) => (1 << value) as TwelveBits;
+export const fromValues = (...values: Value[]) => values.map(one).reduce(union);
+
+export const values = (a: TwelveBits) =>
+  all(0, 11).filter((value) => has(a, value));
+
+export const complement = (a: TwelveBits) => masked(~a);
+
+export const union = (a: TwelveBits, b: TwelveBits) => (a | b) as TwelveBits;
+
+export const intersection = (a: TwelveBits, b: TwelveBits) =>
+  (a & b) as TwelveBits;
+
+export const symmetricDifference = (a: TwelveBits, b: TwelveBits) =>
+  (a ^ b) as TwelveBits;
+
+export const difference = (a: TwelveBits, b: TwelveBits) =>
+  intersection(a, complement(b));
+
+export const has = (a: TwelveBits, value: Value) =>
+  Boolean(intersection(a, fromValues(value)));
+
+export const add = (a: TwelveBits, value: Value) => union(a, fromValues(value));
+
+export const remove = (a: TwelveBits, value: Value) =>
+  intersection(a, complement(fromValues(value)));
+
+export const toggle = (a: TwelveBits, value: Value) =>
+  symmetricDifference(a, fromValues(value));
+
+export const isSuperset = (a: TwelveBits, of: TwelveBits) =>
+  !intersection(complement(a), of);
+
+export const isSubset = (a: TwelveBits, of: TwelveBits) => isSuperset(of, a);

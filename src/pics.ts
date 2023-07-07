@@ -1,29 +1,21 @@
 import { PitchIntervalClass } from "./pic.js";
 import * as PIC from "./pic.js";
-import {
-  isTwelveBits,
-  PartialTwelveBits,
-  TwelveBits,
-} from "./refined/twelve-bits.js";
+import * as TB from "./refined/twelve-bits.js";
 
 export interface PitchIntervalClassSetBrand {
   readonly PitchIntervalClassSet: unique symbol;
 }
 
-export type PitchIntervalClassSet = TwelveBits & PitchIntervalClassSetBrand;
+export type PitchIntervalClassSet = TB.TwelveBits & PitchIntervalClassSetBrand;
 
-export const const_ = <T>(v: T) => v as T & PitchIntervalClassSet;
-export const EMPTY = const_(0);
-export const ALL = const_(
-  //109876543210
-  0b111111111111
-);
-
-export const fromRaw = <T extends TwelveBits | PartialTwelveBits>(v: T) =>
-  v as T & PitchIntervalClassSet;
-export const fromRawMasked = (v: number) => (v & ALL) as PitchIntervalClassSet;
+export const fromRaw = (v: TB.TwelveBits | TB.PartialTwelveBits) =>
+  v as PitchIntervalClassSet;
+export const fromRawMasked = (v: number) => fromRaw(TB.masked(v));
 export const fromRawUnknown = (v: unknown) =>
-  isTwelveBits(v) ? fromRaw(v) : undefined;
+  TB.isTwelveBits(v) ? fromRaw(v) : undefined;
+
+export const EMPTY = fromRaw(TB.EMPTY);
+export const ALL = fromRaw(TB.ALL);
 
 const one = (pc: PitchIntervalClass) => (1 << pc) as PitchIntervalClassSet;
 export const from = (...values: PitchIntervalClass[]) =>
@@ -72,5 +64,5 @@ export const isSubset = (
   of: PitchIntervalClassSet
 ) => isSuperset(of, value);
 
-export const values = (pcs: PitchIntervalClassSet) =>
-  PIC.ALL.filter((pc) => has(pcs, pc));
+export const values = (pics: PitchIntervalClassSet) =>
+  TB.values(pics).map(PIC.from);
