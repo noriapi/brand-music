@@ -1,6 +1,10 @@
 import { PitchIntervalClass } from "./pic.js";
 import * as PIC from "./pic.js";
-import { isTwelveBits, TwelveBits } from "./refined/twelve-bits.js";
+import {
+  isTwelveBits,
+  PartialTwelveBits,
+  TwelveBits,
+} from "./refined/twelve-bits.js";
 
 export interface PitchIntervalClassSetBrand {
   readonly PitchIntervalClassSet: unique symbol;
@@ -15,7 +19,7 @@ export const ALL = const_(
   0b111111111111
 );
 
-export const fromRaw = <T extends TwelveBits>(v: T) =>
+export const fromRaw = <T extends TwelveBits | PartialTwelveBits>(v: T) =>
   v as T & PitchIntervalClassSet;
 export const fromRawMasked = (v: number) => (v & ALL) as PitchIntervalClassSet;
 export const fromRawUnknown = (v: unknown) =>

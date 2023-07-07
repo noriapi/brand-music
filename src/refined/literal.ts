@@ -1,6 +1,14 @@
 import { mod } from "../util.js";
 import { Int } from "./int.js";
 
+export type Negate<N extends number> = N extends 0
+  ? 0
+  : `${N}` extends `-${infer X extends number}`
+  ? X
+  : `-${N}` extends `${infer X extends number}`
+  ? X
+  : number;
+
 export type RangedInt<
   START extends number,
   END extends number,
