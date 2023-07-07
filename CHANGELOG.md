@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/noriapi/brand-music/compare/v0.5.0...v0.6.0) (2023-07-07)
+
+
+### Features
+
+* add understandable module name ([#54](https://github.com/noriapi/brand-music/issues/54)) ([a652b86](https://github.com/noriapi/brand-music/commit/a652b86fc8437568972cac48fb7df170c693532d))
+
 ## [0.5.0](https://github.com/noriapi/brand-music/compare/v0.4.1...v0.5.0) (2023-07-07)
 
 
