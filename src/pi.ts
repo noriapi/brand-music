@@ -2,6 +2,7 @@ import { MidiNoteNumber } from "./mnn.js";
 import * as PIC from "./pic.js";
 import { Int, isInt } from "./refined/int.js";
 import * as I from "./refined/int.js";
+import { Negate, RangedInt } from "./refined/literal.js";
 import { makeAbs } from "./refined/non-negative.js";
 import { NonNegativeInt } from "./refined/non-negative-int.js";
 import * as S from "./semitones.js";
@@ -25,7 +26,13 @@ export const mark = (_v: Int): _v is PitchInterval => true;
 export const markNum = (v: number): v is PitchInterval => hasShape(v);
 export const markUnknown = (v: unknown): v is PitchInterval => hasShape(v);
 
-export const from = (v: Shape) => v as PitchInterval;
+type PartialPositivePitchInterval = RangedInt<1, 999>;
+type PartialPitchInterval =
+  | PartialPositivePitchInterval
+  | 0
+  | Negate<PartialPositivePitchInterval>;
+
+export const from = (v: Shape | PartialPitchInterval) => v as PitchInterval;
 export const fromNum = (v: number) => (markNum(v) ? v : undefined);
 export const fromNumRound = (v: number) => from(I.makeRound(v));
 export const fromNumTrunc = (v: number) => from(I.makeTrunc(v));

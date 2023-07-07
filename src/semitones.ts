@@ -1,5 +1,6 @@
 import * as PI from "./pi.js";
 import { Int } from "./refined/int.js";
+import { RangedInt } from "./refined/literal.js";
 import { makeAbs } from "./refined/non-negative.js";
 import {
   isNonNegativeInt,
@@ -25,7 +26,7 @@ export const mark = (_v: Shape): _v is Semitones => true;
 export const markNum = (v: number): v is Semitones => hasShape(v);
 export const markUnknown = (v: unknown): v is Semitones => hasShape(v);
 
-export const from = (v: Shape) => v as Semitones;
+export const from = (v: Shape | RangedInt<0, 999>) => v as Semitones;
 export const fromNum = (v: number) => (markNum(v) ? v : undefined);
 export const fromIntAbs = (v: Int) => from(makeAbs(v) as NonNegativeInt);
 export const fromUnknown = (v: unknown) => (markUnknown(v) ? v : undefined);
