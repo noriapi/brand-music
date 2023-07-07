@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/noriapi/brand-music/compare/v0.4.1...v0.5.0) (2023-07-07)
+
+
+### Features
+
+* accept some major literal values ([#49](https://github.com/noriapi/brand-music/issues/49)) ([77e5714](https://github.com/noriapi/brand-music/commit/77e5714cbee0e5ab936a904b79f0e60f8168c548))
+
 ## [0.4.1](https://github.com/noriapi/brand-music/compare/v0.4.0...v0.4.1) (2023-07-06)
 
 
