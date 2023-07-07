@@ -2,11 +2,11 @@ import * as IC from "./ic.js";
 import * as MNN from "./mnn.js";
 import * as PIC from "./pic.js";
 import * as I from "./refined/int.js";
-import { all, asInt, clamp, is, modded, RangedInt } from "./refined/literal.js";
+import { all, asInt, clamp, is, modded, RangedNat } from "./refined/literal.js";
 
 const min = 0;
 const max = 11;
-type Shape = RangedInt<typeof min, typeof max>;
+type Shape = RangedNat<typeof min, typeof max>;
 export const hasShape = is(min, max);
 
 export interface PitchClassBrand {
