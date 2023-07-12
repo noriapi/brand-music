@@ -1,7 +1,9 @@
-import * as PC from "./pc.js";
 import * as PI from "./pi.js";
 import { Int } from "./refined/int.js";
 import { all, clamp, is, modded, RangedNat } from "./refined/literal.js";
+
+export { fromMnn as pc } from "./pc.js";
+export { between as pi } from "./pi.js";
 
 const min = 0;
 const max = 127;
@@ -42,12 +44,6 @@ export const transposeModded = (
   value: MidiNoteNumber,
   interval: PI.PitchInterval
 ) => fromIntMod(add(value, interval));
-
-// pitch interval
-export const pi = PI.between;
-
-// pitch class
-export const pc = PC.fromMnn;
 
 // TODO: other constants
 export const C_1 = const_(0);

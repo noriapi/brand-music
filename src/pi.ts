@@ -1,11 +1,12 @@
 import { MidiNoteNumber } from "./mnn.js";
-import * as PIC from "./pic.js";
 import { Int, isInt } from "./refined/int.js";
 import * as I from "./refined/int.js";
 import { Negate, RangedNat } from "./refined/literal.js";
 import { makeAbs } from "./refined/non-negative.js";
 import { NonNegativeInt } from "./refined/non-negative-int.js";
-import * as ST from "./semitones.js";
+
+export { fromPi as pic } from "./pic.js";
+export { fromPi as semitones } from "./semitones.js";
 
 type Shape = Int;
 export const hasShape = isInt;
@@ -74,7 +75,3 @@ export const octaves = (pi: PitchInterval): NonNegativeInt =>
     ? (0 as NonNegativeInt)
     : (makeAbs(I.makeTrunc(pi / 12)) as NonNegativeInt);
 export const direction = (pi: PitchInterval) => (pi < 0 ? -1 : pi > 0 ? 1 : 0);
-
-export const pic = PIC.fromPi;
-
-export const semitones = ST.fromPi;

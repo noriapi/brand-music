@@ -4,6 +4,8 @@ import * as I from "./refined/int.js";
 import { all, asInt, clamp, is, modded, RangedNat } from "./refined/literal.js";
 import { Semitones } from "./semitones.js";
 
+export { fromPic as ic } from "./ic.js";
+
 const min = 0;
 const max = 11;
 type Shape = RangedNat<typeof min, typeof max>;
