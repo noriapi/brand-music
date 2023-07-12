@@ -13,7 +13,7 @@ import * as PitchInterval from "./pi.js";
 export { PitchInterval, PitchInterval as PI };
 
 import * as Semitones from "./semitones.js";
-export { Semitones, Semitones as S };
+export { Semitones, Semitones as ST };
 
 import * as PitchIntervalClass from "./pic.js";
 export { PitchIntervalClass, PitchIntervalClass as PIC };
