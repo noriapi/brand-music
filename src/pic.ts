@@ -38,6 +38,18 @@ export const ALL: readonly PitchIntervalClass[] = all(min, max).map(const_);
 
 export const between = (from: PitchClass, to: PitchClass) =>
   fromIntMod(I.sub(asInt(to), asInt(from)));
+
+/**
+ * Gets the pitch interval class of the pitch interval.
+ *
+ * @example
+ * ```ts
+ * import { PI, PIC } from "brand-music";
+ *
+ * const picOfPi = PIC.fromPi(PI.from(-2)); // 10
+ * const picOfSemitones = PIC.fromSemitones(PI.semitones(PI.from(-2))); // 2
+ * ```
+ */
 export const fromPi = (pi: PitchInterval) => fromIntMod(pi);
 export const fromSemitones = (semitones: Semitones) => fromIntMod(semitones);
 
