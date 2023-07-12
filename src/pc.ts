@@ -1,8 +1,10 @@
-import * as IC from "./ic.js";
 import * as MNN from "./mnn.js";
 import * as PIC from "./pic.js";
 import * as I from "./refined/int.js";
 import { all, asInt, clamp, is, modded, RangedNat } from "./refined/literal.js";
+
+export { between as ic } from "./ic.js";
+export { between as pic } from "./pic.js";
 
 const min = 0;
 const max = 11;
@@ -45,6 +47,3 @@ export const invert = (v: PitchClass, index: Shape = 0) =>
   fromIntMod(I.sub(asInt(index), asInt(v)));
 
 export const fromMnn = (mnn: MNN.MidiNoteNumber) => fromIntMod(asInt(mnn));
-
-export const pic = PIC.between;
-export const ic = IC.between;
