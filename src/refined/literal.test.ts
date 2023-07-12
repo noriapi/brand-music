@@ -24,9 +24,14 @@ describe("modded", () => {
     }
   );
 
-  it("should returns modded value", () => {
-    expect(modded(0, 5)(-3 as Int)).toBe(3);
-    expect(modded(3, 8)(-3 as Int)).toBe(3);
-    expect(modded(-3, 2)(-3 as Int)).toBe(-3);
-  });
+  it.each([
+    [0, 5, -3, 3],
+    [3, 8, -3, 3],
+    [-3, 2, -3, -3],
+  ] as [start: number, end: number, input: Int, expected: number][])(
+    "modded(%i, %i)(%i) -> %i",
+    (start, end, input, expected) => {
+      expect(modded(start, end)(input)).toBe(expected);
+    }
+  );
 });

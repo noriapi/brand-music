@@ -4,26 +4,28 @@ import { describe, expect } from "vitest";
 import { isNonNegative, makeAbs } from "./non-negative.js";
 
 describe("isNonNegative", () => {
-  it("should return true", () => {
-    expect(isNonNegative(0)).toBe(true);
-    expect(isNonNegative(-0)).toBe(true);
-    expect(isNonNegative(0.1)).toBe(true);
-    expect(isNonNegative(Number.POSITIVE_INFINITY)).toBe(true);
-  });
+  it.each([0, -0, 0.1, Number.POSITIVE_INFINITY])(
+    "isNonNegative(%j) -> true",
+    (input) => {
+      expect(isNonNegative(input)).toBe(true);
+    }
+  );
 
-  it("should return false", () => {
-    expect(isNonNegative(-1)).toBe(false);
-    expect(isNonNegative(-0.1)).toBe(false);
-    expect(isNonNegative(Number.NEGATIVE_INFINITY)).toBe(false);
-    expect(isNonNegative(Number.NaN)).toBe(false);
-  });
+  it.each([-1, -0.1, Number.NEGATIVE_INFINITY, Number.NaN])(
+    "isNonNegative(%j) -> false",
+    (input) => {
+      expect(isNonNegative(input)).toBe(false);
+    }
+  );
 });
 
 describe("makeAbs", () => {
-  it("should return NonNegative", () => {
-    expect(isNonNegative(makeAbs(Number.NEGATIVE_INFINITY))).toBe(true);
-    expect(isNonNegative(makeAbs(Number.NaN))).toBe(true);
-  });
+  it.each([Number.NEGATIVE_INFINITY, Number.NaN])(
+    "isNonNegative(makeAbs(%j)) -> true",
+    (input) => {
+      expect(isNonNegative(makeAbs(input))).toBe(true);
+    }
+  );
 
   it.prop([fc.double()])("should always return NonNegative", (value) => {
     return isNonNegative(makeAbs(value));
