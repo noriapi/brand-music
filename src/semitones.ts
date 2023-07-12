@@ -7,6 +7,8 @@ import {
   NonNegativeInt,
 } from "./refined/non-negative-int.js";
 
+export { fromSemitones as pic } from "./pic.js";
+
 type Shape = NonNegativeInt;
 export const hasShape = isNonNegativeInt;
 

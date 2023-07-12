@@ -2,6 +2,7 @@ import { PitchClass } from "./pc.js";
 import { PitchInterval } from "./pi.js";
 import * as I from "./refined/int.js";
 import { all, asInt, clamp, is, modded, RangedNat } from "./refined/literal.js";
+import { Semitones } from "./semitones.js";
 
 const min = 0;
 const max = 11;
@@ -38,6 +39,7 @@ export const ALL: readonly PitchIntervalClass[] = all(min, max).map(const_);
 export const between = (from: PitchClass, to: PitchClass) =>
   fromIntMod(I.sub(asInt(to), asInt(from)));
 export const fromPi = (pi: PitchInterval) => fromIntMod(pi);
+export const fromSemitones = (semitones: Semitones) => fromIntMod(semitones);
 
 export const invert = (v: PitchIntervalClass, index: Shape = 0) =>
   fromIntMod(I.sub(asInt(index), asInt(v)));
