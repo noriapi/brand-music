@@ -8,10 +8,12 @@ describe("markNum", () => {
     expect(PI.markNum(int)).toBe(true);
   });
 
-  it("should return false", () => {
-    expect(PI.markNum(0.5)).toBe(false);
-    expect(PI.markNum(Number.NaN)).toBe(false);
-    expect(PI.markNum(Number.NEGATIVE_INFINITY)).toBe(false);
-    expect(PI.markNum(Number.POSITIVE_INFINITY)).toBe(false);
+  it.each([
+    0.5,
+    Number.NaN,
+    Number.NEGATIVE_INFINITY,
+    Number.POSITIVE_INFINITY,
+  ])("markNum(%f) -> false", (num) => {
+    expect(PI.markNum(num)).toBe(false);
   });
 });

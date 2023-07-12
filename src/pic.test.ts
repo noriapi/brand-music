@@ -1,22 +1,21 @@
-import { describe, expect, it } from "vitest";
+import { expect, it } from "vitest";
 
 import type { PitchInterval } from "./pi.js";
 import * as PIC from "./pic.js";
 
-describe("markNum", () => {
-  it("should return true", () => {
-    expect(PIC.markNum(0)).toBe(true);
-    expect(PIC.markNum(11)).toBe(true);
-  });
+it.each([0, 11])("markNum(%f) -> true", (num) => {
+  expect(PIC.markNum(num)).toBe(true);
+});
 
-  it("should return false", () => {
-    expect(PIC.markNum(-1)).toBe(false);
-    expect(PIC.markNum(12)).toBe(false);
-    expect(PIC.markNum(0.5)).toBe(false);
-    expect(PIC.markNum(Number.NaN)).toBe(false);
-    expect(PIC.markNum(Number.NEGATIVE_INFINITY)).toBe(false);
-    expect(PIC.markNum(Number.POSITIVE_INFINITY)).toBe(false);
-  });
+it.each([
+  -1,
+  12,
+  0.5,
+  Number.NaN,
+  Number.NEGATIVE_INFINITY,
+  Number.POSITIVE_INFINITY,
+])("markNum(%f) -> false", (num) => {
+  expect(PIC.markNum(num)).toBe(false);
 });
 
 it.each([

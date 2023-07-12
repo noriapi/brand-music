@@ -1,19 +1,18 @@
-import { describe, expect, it } from "vitest";
+import { expect, it } from "vitest";
 
 import * as PC from "./pc.js";
 
-describe("markNum", () => {
-  it("should return true", () => {
-    expect(PC.markNum(0)).toBe(true);
-    expect(PC.markNum(11)).toBe(true);
-  });
+it.each([0, 11])("markNum(%f) -> true", (num) => {
+  expect(PC.markNum(num)).toBe(true);
+});
 
-  it("should return false", () => {
-    expect(PC.markNum(-1)).toBe(false);
-    expect(PC.markNum(12)).toBe(false);
-    expect(PC.markNum(0.5)).toBe(false);
-    expect(PC.markNum(Number.NaN)).toBe(false);
-    expect(PC.markNum(Number.NEGATIVE_INFINITY)).toBe(false);
-    expect(PC.markNum(Number.POSITIVE_INFINITY)).toBe(false);
-  });
+it.each([
+  -1,
+  12,
+  0.5,
+  Number.NaN,
+  Number.NEGATIVE_INFINITY,
+  Number.POSITIVE_INFINITY,
+])("markNum(%f) -> false", (num) => {
+  expect(PC.markNum(num)).toBe(false);
 });

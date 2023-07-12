@@ -21,19 +21,20 @@ const arbTwelveBits = () =>
   fc.integer({ min: EMPTY, max: ALL }).map((v) => v as TwelveBits);
 
 describe("isTwelveBits", () => {
-  it("should return true", () => {
-    expect(isTwelveBits(0)).toBe(true);
-    expect(isTwelveBits(4095)).toBe(true);
+  it.each([0, 4095])("isTwelveBits(%j) -> true", (input) => {
+    expect(isTwelveBits(input)).toBe(true);
   });
 
-  it("should return false", () => {
-    expect(isTwelveBits(-1)).toBe(false);
-    expect(isTwelveBits(4096)).toBe(false);
-    expect(isTwelveBits(-0.1)).toBe(false);
-    expect(isTwelveBits(0.1)).toBe(false);
-    expect(isTwelveBits(Number.NaN)).toBe(false);
-    expect(isTwelveBits(Number.POSITIVE_INFINITY)).toBe(false);
-    expect(isTwelveBits(Number.NEGATIVE_INFINITY)).toBe(false);
+  it.each([
+    -1,
+    4096,
+    -0.1,
+    0.1,
+    Number.NaN,
+    Number.POSITIVE_INFINITY,
+    Number.NEGATIVE_INFINITY,
+  ])("isTwelveBits(%j) -> false", (input) => {
+    expect(isTwelveBits(input)).toBe(false);
   });
 });
 
