@@ -1,5 +1,6 @@
+import * as MNN from "./mnn.js";
 import * as PI from "./pi.js";
-import { Int } from "./refined/int.js";
+import * as I from "./refined/int.js";
 import { RangedNat } from "./refined/literal.js";
 import { makeAbs } from "./refined/non-negative.js";
 import {
@@ -30,10 +31,15 @@ export const markUnknown = (v: unknown): v is Semitones => hasShape(v);
 
 export const from = (v: Shape | RangedNat<0, 999>) => v as Semitones;
 export const fromNum = (v: number) => (markNum(v) ? v : undefined);
-export const fromIntAbs = (v: Int) => from(makeAbs(v) as NonNegativeInt);
+export const fromIntAbs = (v: I.Int) => from(makeAbs(v) as NonNegativeInt);
 export const fromUnknown = (v: unknown) => (markUnknown(v) ? v : undefined);
 
 const const_ = <T>(v: T) => v as T & Semitones;
 export const MIN = const_(0);
 
 export const fromPi = (pi: PI.PitchInterval) => fromIntAbs(pi);
+
+export const between = (a: MNN.MidiNoteNumber, b: MNN.MidiNoteNumber) =>
+  fromIntAbs((a - b) as I.Int);
+export const octaves = (st: Semitones) =>
+  st === 0 ? (0 as NonNegativeInt) : (I.makeTrunc(st / 12) as NonNegativeInt);
