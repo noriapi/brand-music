@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/noriapi/brand-music/compare/v0.6.0...v0.7.0) (2023-07-12)
+
+
+### Features
+
+* **pic:** add fromSemitones ([#59](https://github.com/noriapi/brand-music/issues/59)) ([1dd8052](https://github.com/noriapi/brand-music/commit/1dd805246b02797eb2cdba666e68deb897ec339d))
+
 ## [0.6.0](https://github.com/noriapi/brand-music/compare/v0.5.0...v0.6.0) (2023-07-07)
 
 
