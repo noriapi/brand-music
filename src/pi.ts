@@ -5,7 +5,7 @@ import * as I from "./refined/int.js";
 import { Negate, RangedNat } from "./refined/literal.js";
 import { makeAbs } from "./refined/non-negative.js";
 import { NonNegativeInt } from "./refined/non-negative-int.js";
-import * as S from "./semitones.js";
+import * as ST from "./semitones.js";
 
 type Shape = Int;
 export const hasShape = isInt;
@@ -77,4 +77,4 @@ export const direction = (pi: PitchInterval) => (pi < 0 ? -1 : pi > 0 ? 1 : 0);
 
 export const pic = PIC.fromPi;
 
-export const semitones = S.fromPi;
+export const semitones = ST.fromPi;
