@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.8.0](https://github.com/noriapi/brand-music/compare/v0.7.0...v0.8.0) (2023-07-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* **semitones:** rename module from `S` to `ST` ([#64](https://github.com/noriapi/brand-music/issues/64))
+
+### Features
+
+* **semitones:** add `between` and `octaves` ([#62](https://github.com/noriapi/brand-music/issues/62)) ([f8ab777](https://github.com/noriapi/brand-music/commit/f8ab777f7c9362091b78c91a0ccb8bb2210e2273))
+
+
+### Code Refactoring
+
+* **semitones:** rename module from `S` to `ST` ([#64](https://github.com/noriapi/brand-music/issues/64)) ([e291d39](https://github.com/noriapi/brand-music/commit/e291d395cd907e3d72b1ba228329885ac1abfade))
+
 ## [0.7.0](https://github.com/noriapi/brand-music/compare/v0.6.0...v0.7.0) (2023-07-12)
 
 
