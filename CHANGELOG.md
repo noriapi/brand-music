@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.0](https://github.com/noriapi/brand-music/compare/v0.8.0...v0.9.0) (2023-07-13)
+
+
+### Features
+
+* export literal `Shape` ([#66](https://github.com/noriapi/brand-music/issues/66)) ([0f44ae9](https://github.com/noriapi/brand-music/commit/0f44ae90f928966e64c646d263165cea8dca8b6e))
+
 ## [0.8.0](https://github.com/noriapi/brand-music/compare/v0.7.0...v0.8.0) (2023-07-12)
 
 
