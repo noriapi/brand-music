@@ -5,7 +5,7 @@ import { all, clamp, is, modded, RangedNat } from "./refined/literal.js";
 
 const min = 0;
 const max = 6;
-type Shape = RangedNat<typeof min, typeof max>;
+export type Shape = RangedNat<typeof min, typeof max>;
 export const hasShape = is(min, max);
 
 export interface IntervalClassBrand {
