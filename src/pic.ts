@@ -8,7 +8,7 @@ export { fromPic as ic } from "./ic.js";
 
 const min = 0;
 const max = 11;
-type Shape = RangedNat<typeof min, typeof max>;
+export type Shape = RangedNat<typeof min, typeof max>;
 export const hasShape = is(min, max);
 
 export interface PitchIntervalClassBrand {

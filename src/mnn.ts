@@ -7,7 +7,7 @@ export { between as pi } from "./pi.js";
 
 const min = 0;
 const max = 127;
-type Shape = RangedNat<typeof min, typeof max>;
+export type Shape = RangedNat<typeof min, typeof max>;
 export const hasShape = is(min, max);
 
 export interface MidiNoteNumberBrand {
