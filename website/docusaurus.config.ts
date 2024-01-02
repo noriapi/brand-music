@@ -1,11 +1,11 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+import type * as Preset from "@docusaurus/preset-classic";
+import type { Config } from "@docusaurus/types";
+import { themes } from "prism-react-renderer";
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
-/** @type {import('@docusaurus/types').Config} */
-const config = {
+const config: Config = {
   title: "brand-music",
   tagline: "Strongly typed music theory library",
   // favicon: "img/favicon.ico",
@@ -42,11 +42,10 @@ const config = {
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      {
         docs: {
           routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -54,36 +53,34 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: "./src/css/custom.css",
         },
-      }),
+      } satisfies Preset.Options,
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      // Replace with your project's social card
-      // image: "img/docusaurus-social-card.jpg",
-      navbar: {
-        title: "brand-music",
-        items: [
-          {
-            href: "https://github.com/noriapi/brand-music",
-            label: "GitHub",
-            position: "right",
-          },
-        ],
-      },
-      footer: {
-        style: "dark",
-        copyright: `Copyright © ${new Date().getFullYear()} noriapi. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+  themeConfig: {
+    // Replace with your project's social card
+    // image: "img/docusaurus-social-card.jpg",
+    navbar: {
+      title: "brand-music",
+      items: [
+        {
+          href: "https://github.com/noriapi/brand-music",
+          label: "GitHub",
+          position: "right",
+        },
+      ],
+    },
+    footer: {
+      style: "dark",
+      copyright: `Copyright © ${new Date().getFullYear()} noriapi. Built with Docusaurus.`,
+    },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+    },
+  } satisfies Preset.ThemeConfig,
 };
 
-module.exports = config;
+export default config;
