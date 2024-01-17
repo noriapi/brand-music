@@ -34,15 +34,15 @@ const add = (value: MidiNoteNumber, interval: PI.PitchInterval) =>
   (value + interval) as Int;
 export const transposeChecked = (
   value: MidiNoteNumber,
-  interval: PI.PitchInterval
+  interval: PI.PitchInterval,
 ) => fromNum(add(value, interval));
 export const transposeClamped = (
   value: MidiNoteNumber,
-  interval: PI.PitchInterval
+  interval: PI.PitchInterval,
 ) => fromIntClamp(add(value, interval));
 export const transposeModded = (
   value: MidiNoteNumber,
-  interval: PI.PitchInterval
+  interval: PI.PitchInterval,
 ) => fromIntMod(add(value, interval));
 
 // TODO: other constants

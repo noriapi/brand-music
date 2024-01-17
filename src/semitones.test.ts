@@ -25,7 +25,7 @@ describe("between", () => {
     "should always return the same value when args are swapped",
     (a, b) => {
       expect(ST.between(a, b)).toBe(ST.between(b, a));
-    }
+    },
   );
 });
 
@@ -39,6 +39,6 @@ describe("octaves", () => {
     "octaves(%i) -> %i",
     (st, expected) => {
       expect(ST.octaves(st)).toBe(expected);
-    }
+    },
   );
 });

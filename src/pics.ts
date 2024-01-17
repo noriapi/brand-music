@@ -29,17 +29,17 @@ export const union = (a: PitchIntervalClassSet, b: PitchIntervalClassSet) =>
 
 export const intersection = (
   a: PitchIntervalClassSet,
-  b: PitchIntervalClassSet
+  b: PitchIntervalClassSet,
 ) => (a & b) as PitchIntervalClassSet;
 
 export const symmetricDifference = (
   a: PitchIntervalClassSet,
-  b: PitchIntervalClassSet
+  b: PitchIntervalClassSet,
 ) => (a ^ b) as PitchIntervalClassSet;
 
 export const difference = (
   a: PitchIntervalClassSet,
-  b: PitchIntervalClassSet
+  b: PitchIntervalClassSet,
 ) => intersection(a, toggleAll(b));
 
 export const has = (pcs: PitchIntervalClassSet, pc: PitchIntervalClass) =>
@@ -56,12 +56,12 @@ export const toggle = (pcs: PitchIntervalClassSet, pc: PitchIntervalClass) =>
 
 export const isSuperset = (
   value: PitchIntervalClassSet,
-  of: PitchIntervalClassSet
+  of: PitchIntervalClassSet,
 ) => !intersection(toggleAll(value), of);
 
 export const isSubset = (
   value: PitchIntervalClassSet,
-  of: PitchIntervalClassSet
+  of: PitchIntervalClassSet,
 ) => isSuperset(of, value);
 
 export const values = (pics: PitchIntervalClassSet) =>

@@ -9,11 +9,11 @@ export const isNonNegative = <T>(v: T): v is T & NonNegative =>
 
 export function makeAbs<T extends number, N extends NonNegative>(
   v: T,
-  edgeCases: { NaN: N }
+  edgeCases: { NaN: N },
 ): (T & NonNegative) | N;
 export function makeAbs<T extends number>(
   v: T,
-  edgeCases?: { NaN?: never }
+  edgeCases?: { NaN?: never },
 ): (T & NonNegative) | (0 & NonNegative);
 export function makeAbs(v: number, edgeCases?: { NaN?: NonNegative }) {
   const caseNaN = edgeCases?.NaN ?? (0 as 0 & NonNegative);
