@@ -33,7 +33,7 @@ it.each([
   "fromPi(%i) -> %i",
   (pi, expected) => {
     expect(PIC.fromPi(pi)).toBe(expected);
-  }
+  },
 );
 
 it.each([
@@ -46,5 +46,5 @@ it.each([
   "fromSemitones(%i) -> %i",
   (pi, expected) => {
     expect(PIC.fromSemitones(pi)).toBe(expected);
-  }
+  },
 );

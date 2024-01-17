@@ -8,14 +8,14 @@ describe("isNonNegative", () => {
     "isNonNegative(%j) -> true",
     (input) => {
       expect(isNonNegative(input)).toBe(true);
-    }
+    },
   );
 
   it.each([-1, -0.1, Number.NEGATIVE_INFINITY, Number.NaN])(
     "isNonNegative(%j) -> false",
     (input) => {
       expect(isNonNegative(input)).toBe(false);
-    }
+    },
   );
 });
 
@@ -24,7 +24,7 @@ describe("makeAbs", () => {
     "isNonNegative(makeAbs(%j)) -> true",
     (input) => {
       expect(isNonNegative(makeAbs(input))).toBe(true);
-    }
+    },
   );
 
   it.prop([fc.double()])("should always return NonNegative", (value) => {

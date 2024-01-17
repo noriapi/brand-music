@@ -40,7 +40,7 @@ export const ALL: readonly PitchClass[] = all(min, max).map(const_);
 
 export const transpose = (
   value: PitchClass,
-  interval: PIC.PitchIntervalClass
+  interval: PIC.PitchIntervalClass,
 ) => fromIntMod(I.add(asInt(value), asInt(interval)));
 
 export const invert = (v: PitchClass, index: Shape = 0) =>

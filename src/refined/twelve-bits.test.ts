@@ -64,14 +64,14 @@ describe("complement", () => {
     "should always return original value if called twice",
     (input) => {
       expect(complement(complement(input))).toBe(input);
-    }
+    },
   );
 
   it.prop([arbTwelveBits()])(
     "should always return value different from original",
     (input) => {
       expect(complement(input)).not.toBe(input);
-    }
+    },
   );
 });
 
@@ -80,7 +80,7 @@ describe("isSuperset", () => {
     "should always return true if args are same",
     (input) => {
       expect(isSuperset(input, input)).toBe(true);
-    }
+    },
   );
 
   it.prop([arbTwelveBits(), arbTwelveBits()])(
@@ -88,7 +88,7 @@ describe("isSuperset", () => {
     (a, b) => {
       expect(isSuperset(union(a, b), a)).toBe(true);
       expect(isSuperset(union(a, b), b)).toBe(true);
-    }
+    },
   );
 });
 
@@ -97,6 +97,6 @@ describe("isSubset", () => {
     "should always return true if args are same",
     (input) => {
       expect(isSubset(input, input)).toBe(true);
-    }
+    },
   );
 });
