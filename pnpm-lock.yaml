@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@fast-check/vitest':
-    specifier: ^0.0.6
-    version: 0.0.6(vitest@0.32.2)
+    specifier: ^0.0.9
+    version: 0.0.9(vitest@0.32.2)
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.60.1
     version: 5.60.1(@typescript-eslint/parser@5.60.1)(eslint@8.44.0)(typescript@5.1.6)
@@ -323,10 +323,10 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fast-check/vitest@0.0.6(vitest@0.32.2):
-    resolution: {integrity: sha512-fcns/2fvWopeUt7hdPcDgPxasekAJhXpdxtu9n+g5kPB/S60+V0onuQirwFqRKg2g3Z7hkrQJkkHOM1MaMGdDA==}
+  /@fast-check/vitest@0.0.9(vitest@0.32.2):
+    resolution: {integrity: sha512-Rely/2xFVQeDdRqtjDE3eO4K3h1XMj0ci6/L3Lv0CakPdn3WZHvI6K3TnUAuHQK2egmesZt1i2aTPpbEbLs3eA==}
     peerDependencies:
-      vitest: '>=0.28.1'
+      vitest: '>=0.28.1 <1.0.0 || ^1'
     dependencies:
       fast-check: 3.10.0
       vitest: 0.32.2
