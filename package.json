@@ -45,8 +45,8 @@
     "fmt": "prettier --write src",
     "lint": "eslint src && prettier --check src",
     "lint:fix": "eslint --fix src",
-    "test": "vitest",
-    "typecheck": "vitest typecheck",
+    "test": "vitest --typecheck",
+    "typecheck": "vitest --typecheck.only",
     "prepare": "husky install"
   },
   "lint-staged": {
