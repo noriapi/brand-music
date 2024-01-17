@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1](https://github.com/noriapi/brand-music/compare/v0.9.0...v0.9.1) (2024-01-17)
+
+
+### Bug Fixes
+
+* **deps:** update docusaurus monorepo to v2.4.3 ([#79](https://github.com/noriapi/brand-music/issues/79)) ([1cca2ff](https://github.com/noriapi/brand-music/commit/1cca2ffa60bfefe7874c65b1bf2a275dcc7e8cf6))
+
 ## [0.9.0](https://github.com/noriapi/brand-music/compare/v0.8.0...v0.9.0) (2023-07-13)
 
 
