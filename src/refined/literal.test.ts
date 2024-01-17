@@ -11,7 +11,7 @@ const arbRange = () =>
         min: Number.MIN_SAFE_INTEGER,
         max: Number.MAX_SAFE_INTEGER - 999,
       }),
-      fc.nat(999)
+      fc.nat(999),
     )
     .map(([start, size]) => [start, start + size] as const);
 
@@ -21,7 +21,7 @@ describe("modded", () => {
     (range, value) => {
       const result = modded(...range)(value as Int);
       return is(...range)(result);
-    }
+    },
   );
 
   it.each([
@@ -32,6 +32,6 @@ describe("modded", () => {
     "modded(%i, %i)(%i) -> %i",
     (start, end, input, expected) => {
       expect(modded(start, end)(input)).toBe(expected);
-    }
+    },
   );
 });

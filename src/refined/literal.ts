@@ -4,16 +4,16 @@ import { Int } from "./int.js";
 export type Negate<N extends number> = N extends 0
   ? 0
   : `${N}` extends `-${infer X extends number}`
-  ? X
-  : `-${N}` extends `${infer X extends number}`
-  ? X
-  : number;
+    ? X
+    : `-${N}` extends `${infer X extends number}`
+      ? X
+      : number;
 
 export type RangedNat<
   START extends number,
   END extends number,
   ARR extends unknown[] = [],
-  ACC extends number = never
+  ACC extends number = never,
 > = ARR["length"] extends END
   ? ACC | START | END
   : RangedNat<
@@ -50,7 +50,7 @@ export const modded =
 
 export const all = <S extends number, E extends number>(
   start: S,
-  end: E
+  end: E,
 ): readonly RangedNat<S, E>[] =>
   [...Array(end - start + 1)].map((_, i) => (start + i) as RangedNat<S, E>);
 
