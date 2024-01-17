@@ -71,5 +71,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "volta": {
+    "node": "20.11.0"
   }
 }
