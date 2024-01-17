@@ -32,7 +32,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version-file: "package.json"
           registry-url: "https://registry.npmjs.org"
 
       - uses: pnpm/action-setup@v2
@@ -84,7 +84,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version-file: "package.json"
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
