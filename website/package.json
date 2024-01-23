@@ -52,5 +52,10 @@
   },
   "volta": {
     "node": "20.11.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "follow-redirects@<1.15.4": ">=1.15.4"
+    }
   }
 }
