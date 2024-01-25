@@ -46,12 +46,7 @@
     "lint": "eslint src && prettier --check src",
     "lint:fix": "eslint --fix src",
     "test": "vitest --typecheck",
-    "typecheck": "vitest --typecheck.only",
-    "prepare": "husky install"
-  },
-  "lint-staged": {
-    "src/**/*.ts": "eslint",
-    "src/**/*": "prettier --list-different --ignore-unknown"
+    "typecheck": "vitest --typecheck.only"
   },
   "devDependencies": {
     "@fast-check/vitest": "^0.0.9",
@@ -63,8 +58,6 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-tsdoc": "^0.2.17",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
     "typescript": "^5.1.6",
     "vitest": "^1.2.1"
