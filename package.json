@@ -50,8 +50,8 @@
   },
   "devDependencies": {
     "@fast-check/vitest": "^0.0.9",
-    "@typescript-eslint/eslint-plugin": "^6.19.1",
-    "@typescript-eslint/parser": "^6.19.1",
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
     "@vitest/coverage-v8": "^1.2.2",
     "del-cli": "^5.1.0",
     "eslint": "^8.56.0",
