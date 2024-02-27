@@ -1,6 +1,6 @@
 {
   "name": "brand-music",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Strongly typed music theory library",
   "keywords": [
     "music",

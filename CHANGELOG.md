@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/noriapi/brand-music/compare/v0.9.0...v0.10.0) (2024-02-27)
+
+
+### Features
+
+* add `mark*` functions to PIC and PICS ([#142](https://github.com/noriapi/brand-music/issues/142)) ([d817c3f](https://github.com/noriapi/brand-music/commit/d817c3f5147d83d34644cefdfc8112b1d9c569c6))
+
 ## [0.9.0](https://github.com/noriapi/brand-music/compare/v0.8.0...v0.9.0) (2023-07-13)
 
 
