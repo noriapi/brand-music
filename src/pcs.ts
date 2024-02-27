@@ -2,11 +2,18 @@ import { PitchClass } from "./pc.js";
 import * as PC from "./pc.js";
 import * as TB from "./refined/twelve-bits.js";
 
+export type Shape = TB.TwelveBits;
+export const hasShape = TB.isTwelveBits;
+
 export interface PitchClassSetBrand {
   readonly PitchClassSet: unique symbol;
 }
 
-export type PitchClassSet = TB.TwelveBits & PitchClassSetBrand;
+export type PitchClassSet = Shape & PitchClassSetBrand;
+
+export const mark = (_v: Shape): _v is PitchClassSet => true;
+export const markRaw = (v: number): v is PitchClassSet => hasShape(v);
+export const markRawUnknown = (v: unknown): v is PitchClassSet => hasShape(v);
 
 export const fromRaw = (v: TB.TwelveBits | TB.PartialTwelveBits) =>
   v as PitchClassSet;

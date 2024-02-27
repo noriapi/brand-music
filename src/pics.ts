@@ -2,11 +2,19 @@ import { PitchIntervalClass } from "./pic.js";
 import * as PIC from "./pic.js";
 import * as TB from "./refined/twelve-bits.js";
 
+export type Shape = TB.TwelveBits;
+export const hasShape = TB.isTwelveBits;
+
 export interface PitchIntervalClassSetBrand {
   readonly PitchIntervalClassSet: unique symbol;
 }
 
-export type PitchIntervalClassSet = TB.TwelveBits & PitchIntervalClassSetBrand;
+export type PitchIntervalClassSet = Shape & PitchIntervalClassSetBrand;
+
+export const mark = (_v: Shape): _v is PitchIntervalClassSet => true;
+export const markRaw = (v: number): v is PitchIntervalClassSet => hasShape(v);
+export const markRawUnknown = (v: unknown): v is PitchIntervalClassSet =>
+  hasShape(v);
 
 export const fromRaw = (v: TB.TwelveBits | TB.PartialTwelveBits) =>
   v as PitchIntervalClassSet;
