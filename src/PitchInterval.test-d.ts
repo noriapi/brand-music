@@ -1,6 +1,6 @@
 import { describe, expectTypeOf, it } from "vitest";
 
-import * as PI from "./pi.js";
+import * as PI from "./PitchInterval.js";
 
 describe("from", () => {
   it("should callable with valid literal", () => {

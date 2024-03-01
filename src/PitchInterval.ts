@@ -1,12 +1,12 @@
-import { MidiNoteNumber } from "./mnn.js";
+import { MidiNoteNumber } from "./MidiNoteNumber.js";
 import { Int, isInt } from "./refined/int.js";
 import * as I from "./refined/int.js";
 import { Negate, RangedNat } from "./refined/literal.js";
 import { makeAbs } from "./refined/non-negative.js";
 import { NonNegativeInt } from "./refined/non-negative-int.js";
 
-export { fromPi as pic } from "./pic.js";
-export { fromPi as semitones } from "./semitones.js";
+export { fromPi as pic } from "./PitchIntervalClass.js";
+export { fromPi as semitones } from "./Semitones.js";
 
 type Shape = Int;
 export const hasShape = isInt;

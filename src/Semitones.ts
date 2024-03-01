@@ -1,5 +1,5 @@
-import * as MNN from "./mnn.js";
-import * as PI from "./pi.js";
+import * as MNN from "./MidiNoteNumber.js";
+import * as PI from "./PitchInterval.js";
 import * as I from "./refined/int.js";
 import { RangedNat } from "./refined/literal.js";
 import { makeAbs } from "./refined/non-negative.js";
@@ -8,7 +8,7 @@ import {
   NonNegativeInt,
 } from "./refined/non-negative-int.js";
 
-export { fromSemitones as pic } from "./pic.js";
+export { fromSemitones as pic } from "./PitchIntervalClass.js";
 
 type Shape = NonNegativeInt;
 export const hasShape = isNonNegativeInt;

@@ -1,6 +1,6 @@
 import { describe, expectTypeOf, it } from "vitest";
 
-import * as PCS from "./pcs.js";
+import * as PCS from "./PitchClassSet.js";
 
 describe("fromRaw", () => {
   it("should callable with valid literal", () => {

@@ -1,7 +1,7 @@
 import { fc } from "@fast-check/vitest";
 import { expect, it } from "vitest";
 
-import * as MNN from "./mnn.js";
+import * as MNN from "./MidiNoteNumber.js";
 
 export const arbMnn = () =>
   fc.integer({

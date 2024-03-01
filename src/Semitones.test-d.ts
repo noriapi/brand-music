@@ -1,6 +1,6 @@
 import { describe, expectTypeOf, it } from "vitest";
 
-import * as ST from "./semitones.js";
+import * as ST from "./Semitones.js";
 
 describe("from", () => {
   it("should callable with valid literal", () => {

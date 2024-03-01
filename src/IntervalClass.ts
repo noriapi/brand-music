@@ -1,5 +1,5 @@
-import * as PC from "./pc.js";
-import * as PIC from "./pic.js";
+import * as PC from "./PitchClass.js";
+import * as PIC from "./PitchIntervalClass.js";
 import * as I from "./refined/int.js";
 import { all, clamp, is, modded, RangedNat } from "./refined/literal.js";
 

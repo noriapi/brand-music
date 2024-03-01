@@ -1,6 +1,6 @@
 import { describe, expectTypeOf, it } from "vitest";
 
-import * as PICS from "./pics.js";
+import * as PICS from "./PitchIntervalClassSet.js";
 
 describe("fromRaw", () => {
   it("should callable with valid literal", () => {

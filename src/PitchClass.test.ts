@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
 
-import * as PC from "./pc.js";
+import * as PC from "./PitchClass.js";
 
 it.each([0, 11])("markNum(%f) -> true", (num) => {
   expect(PC.markNum(num)).toBe(true);

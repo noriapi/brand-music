@@ -1,8 +1,8 @@
 import { fc, it } from "@fast-check/vitest";
 import { describe, expect } from "vitest";
 
-import { arbMnn } from "./mnn.test.js";
-import * as ST from "./semitones.js";
+import { arbMnn } from "./MidiNoteNumber.test.js";
+import * as ST from "./Semitones.js";
 
 describe("markNum", () => {
   it.prop([fc.maxSafeNat()])("should return true", (int) => {

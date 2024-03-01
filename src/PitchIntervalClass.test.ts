@@ -1,8 +1,8 @@
 import { expect, it } from "vitest";
 
-import type { PitchInterval } from "./pi.js";
-import * as PIC from "./pic.js";
-import type { Semitones } from "./semitones.js";
+import type { PitchInterval } from "./PitchInterval.js";
+import * as PIC from "./PitchIntervalClass.js";
+import type { Semitones } from "./Semitones.js";
 
 it.each([0, 11])("markNum(%f) -> true", (num) => {
   expect(PIC.markNum(num)).toBe(true);

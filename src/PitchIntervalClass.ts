@@ -1,10 +1,10 @@
-import { PitchClass } from "./pc.js";
-import { PitchInterval } from "./pi.js";
+import { PitchClass } from "./PitchClass.js";
+import { PitchInterval } from "./PitchInterval.js";
 import * as I from "./refined/int.js";
 import { all, asInt, clamp, is, modded, RangedNat } from "./refined/literal.js";
-import { Semitones } from "./semitones.js";
+import { Semitones } from "./Semitones.js";
 
-export { fromPic as ic } from "./ic.js";
+export { fromPic as ic } from "./IntervalClass.js";
 
 const min = 0;
 const max = 11;
