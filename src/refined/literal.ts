@@ -52,6 +52,7 @@ export const all = <S extends number, E extends number>(
   start: S,
   end: E,
 ): readonly RangedNat<S, E>[] =>
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   [...Array(end - start + 1)].map((_, i) => (start + i) as RangedNat<S, E>);
 
 export const asInt = (v: RangedNat<number, number>) => v as Int;
