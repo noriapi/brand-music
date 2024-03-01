@@ -21,6 +21,7 @@
     "name": "noriapi"
   },
   "type": "module",
+  "sideEffects": false,
   "exports": {
     ".": {
       "import": "./esm/index.js",
