@@ -1,5 +1,5 @@
-import { PitchClass } from "./pc.js";
-import * as PC from "./pc.js";
+import { PitchClass } from "./PitchClass.js";
+import * as PC from "./PitchClass.js";
 import * as TB from "./refined/twelve-bits.js";
 
 export type Shape = TB.TwelveBits;

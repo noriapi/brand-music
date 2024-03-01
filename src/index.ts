@@ -1,25 +1,8 @@
-/* eslint-disable simple-import-sort/exports */
-
-export * as MidiNoteNumber from "./mnn.js";
-export * as MNN from "./mnn.js";
-
-export * as PitchClass from "./pc.js";
-export * as PC from "./pc.js";
-
-export * as PitchClassSet from "./pcs.js";
-export * as PCS from "./pcs.js";
-
-export * as PitchInterval from "./pi.js";
-export * as PI from "./pi.js";
-
-export * as Semitones from "./semitones.js";
-export * as ST from "./semitones.js";
-
-export * as PitchIntervalClass from "./pic.js";
-export * as PIC from "./pic.js";
-
-export * as PitchIntervalClassSet from "./pics.js";
-export * as PICS from "./pics.js";
-
-export * as IntervalClass from "./ic.js";
-export * as IC from "./ic.js";
+export * as IntervalClass from "./IntervalClass.js";
+export * as MidiNoteNumber from "./MidiNoteNumber.js";
+export * as PitchClass from "./PitchClass.js";
+export * as PitchClassSet from "./PitchClassSet.js";
+export * as PitchInterval from "./PitchInterval.js";
+export * as PitchIntervalClass from "./PitchIntervalClass.js";
+export * as PitchIntervalClassSet from "./PitchIntervalClassSet.js";
+export * as Semitones from "./Semitones.js";

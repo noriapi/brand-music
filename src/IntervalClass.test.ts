@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
 
-import * as IC from "./ic.js";
+import * as IC from "./IntervalClass.js";
 
 it.each([0, 6])("markNum(%f) -> true", (num) => {
   expect(IC.markNum(num)).toBe(true);

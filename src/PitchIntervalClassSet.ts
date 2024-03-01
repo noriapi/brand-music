@@ -1,5 +1,5 @@
-import { PitchIntervalClass } from "./pic.js";
-import * as PIC from "./pic.js";
+import { PitchIntervalClass } from "./PitchIntervalClass.js";
+import * as PIC from "./PitchIntervalClass.js";
 import * as TB from "./refined/twelve-bits.js";
 
 export type Shape = TB.TwelveBits;

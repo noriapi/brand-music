@@ -1,7 +1,7 @@
 import { fc, it } from "@fast-check/vitest";
 import { describe, expect } from "vitest";
 
-import * as PI from "./pi.js";
+import * as PI from "./PitchInterval.js";
 
 describe("markNum", () => {
   it.prop([fc.maxSafeInteger()])("should return true", (int) => {

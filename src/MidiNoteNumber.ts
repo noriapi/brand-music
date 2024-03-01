@@ -1,9 +1,9 @@
-import * as PI from "./pi.js";
+import * as PI from "./PitchInterval.js";
 import { Int } from "./refined/int.js";
 import { all, clamp, is, modded, RangedNat } from "./refined/literal.js";
 
-export { fromMnn as pc } from "./pc.js";
-export { between as pi } from "./pi.js";
+export { fromMnn as pc } from "./PitchClass.js";
+export { between as pi } from "./PitchInterval.js";
 
 const min = 0;
 const max = 127;

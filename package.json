@@ -20,60 +20,108 @@
   "author": {
     "name": "noriapi"
   },
-  "type": "module",
   "sideEffects": false,
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./esm/index.js",
-      "require": "./dist/cjs/index.js"
-    },
-    "./MidiNoteNumber": {
-      "import": "./esm/mnn.js",
-      "require": "./dist/cjs/mnn.js"
-    },
-    "./PitchClass": {
-      "import": "./esm/pc.js",
-      "require": "./dist/cjs/pc.js"
-    },
-    "./PitchClassSet": {
-      "import": "./esm/pcs.js",
-      "require": "./dist/cjs/pcs.js"
-    },
-    "./PitchInterval": {
-      "import": "./esm/pi.js",
-      "require": "./dist/cjs/pi.js"
-    },
-    "./Semitones": {
-      "import": "./esm/semitones.js",
-      "require": "./dist/cjs/semitones.js"
-    },
-    "./PitchIntervalClass": {
-      "import": "./esm/pic.js",
-      "require": "./dist/cjs/pic.js"
-    },
-    "./PitchIntervalClassSet": {
-      "import": "./esm/pics.js",
-      "require": "./dist/cjs/pics.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     },
     "./IntervalClass": {
-      "import": "./esm/ic.js",
-      "require": "./dist/cjs/ic.js"
+      "import": {
+        "types": "./dist/IntervalClass.d.ts",
+        "default": "./dist/IntervalClass.js"
+      },
+      "require": {
+        "types": "./dist/IntervalClass.d.cts",
+        "default": "./dist/IntervalClass.cjs"
+      }
+    },
+    "./MidiNoteNumber": {
+      "import": {
+        "types": "./dist/MidiNoteNumber.d.ts",
+        "default": "./dist/MidiNoteNumber.js"
+      },
+      "require": {
+        "types": "./dist/MidiNoteNumber.d.cts",
+        "default": "./dist/MidiNoteNumber.cjs"
+      }
+    },
+    "./PitchClass": {
+      "import": {
+        "types": "./dist/PitchClass.d.ts",
+        "default": "./dist/PitchClass.js"
+      },
+      "require": {
+        "types": "./dist/PitchClass.d.cts",
+        "default": "./dist/PitchClass.cjs"
+      }
+    },
+    "./PitchClassSet": {
+      "import": {
+        "types": "./dist/PitchClassSet.d.ts",
+        "default": "./dist/PitchClassSet.js"
+      },
+      "require": {
+        "types": "./dist/PitchClassSet.d.cts",
+        "default": "./dist/PitchClassSet.cjs"
+      }
+    },
+    "./PitchInterval": {
+      "import": {
+        "types": "./dist/PitchInterval.d.ts",
+        "default": "./dist/PitchInterval.js"
+      },
+      "require": {
+        "types": "./dist/PitchInterval.d.cts",
+        "default": "./dist/PitchInterval.cjs"
+      }
+    },
+    "./PitchIntervalClass": {
+      "import": {
+        "types": "./dist/PitchIntervalClass.d.ts",
+        "default": "./dist/PitchIntervalClass.js"
+      },
+      "require": {
+        "types": "./dist/PitchIntervalClass.d.cts",
+        "default": "./dist/PitchIntervalClass.cjs"
+      }
+    },
+    "./PitchIntervalClassSet": {
+      "import": {
+        "types": "./dist/PitchIntervalClassSet.d.ts",
+        "default": "./dist/PitchIntervalClassSet.js"
+      },
+      "require": {
+        "types": "./dist/PitchIntervalClassSet.d.cts",
+        "default": "./dist/PitchIntervalClassSet.cjs"
+      }
+    },
+    "./Semitones": {
+      "import": {
+        "types": "./dist/Semitones.d.ts",
+        "default": "./dist/Semitones.js"
+      },
+      "require": {
+        "types": "./dist/Semitones.d.cts",
+        "default": "./dist/Semitones.cjs"
+      }
     },
     "./package.json": "./package.json"
   },
-  "main": "./cjs/index.js",
-  "types": "./cjs/index.d.ts",
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.cts",
   "files": [
-    "esm",
-    "cjs",
-    "src",
-    "!**/*.test.*",
-    "!**/*.test-d.*"
+    "dist"
   ],
   "scripts": {
-    "build": "pnpm build:esm && pnpm build:cjs",
-    "build:cjs": "del-cli cjs && tsc -p tsconfig.cjs.json",
-    "build:esm": "del-cli esm && tsc -p tsconfig.esm.json",
+    "build": "pnpm tsup",
     "coverage": "vitest run --coverage",
     "fmt": "prettier --write src",
     "lint": "eslint src && prettier --check src",
@@ -92,14 +140,15 @@
     "eslint-plugin-simple-import-sort": "^12.0.0",
     "eslint-plugin-tsdoc": "^0.2.17",
     "prettier": "^3.2.5",
+    "tsup": "^8.0.2",
     "typescript": "^5.1.6",
     "vitest": "^1.3.1"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "volta": {
     "node": "20.11.1"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "pnpm": {
     "overrides": {
