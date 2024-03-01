@@ -1,25 +1,25 @@
 /* eslint-disable simple-import-sort/exports */
 
-import * as MidiNoteNumber from "./mnn.js";
-export { MidiNoteNumber, MidiNoteNumber as MNN };
+export * as MidiNoteNumber from "./mnn.js";
+export * as MNN from "./mnn.js";
 
-import * as PitchClass from "./pc.js";
-export { PitchClass, PitchClass as PC };
+export * as PitchClass from "./pc.js";
+export * as PC from "./pc.js";
 
-import * as PitchClassSet from "./pcs.js";
-export { PitchClassSet, PitchClassSet as PCS };
+export * as PitchClassSet from "./pcs.js";
+export * as PCS from "./pcs.js";
 
-import * as PitchInterval from "./pi.js";
-export { PitchInterval, PitchInterval as PI };
+export * as PitchInterval from "./pi.js";
+export * as PI from "./pi.js";
 
-import * as Semitones from "./semitones.js";
-export { Semitones, Semitones as ST };
+export * as Semitones from "./semitones.js";
+export * as ST from "./semitones.js";
 
-import * as PitchIntervalClass from "./pic.js";
-export { PitchIntervalClass, PitchIntervalClass as PIC };
+export * as PitchIntervalClass from "./pic.js";
+export * as PIC from "./pic.js";
 
-import * as PitchIntervalClassSet from "./pics.js";
-export { PitchIntervalClassSet, PitchIntervalClassSet as PICS };
+export * as PitchIntervalClassSet from "./pics.js";
+export * as PICS from "./pics.js";
 
-import * as IntervalClass from "./ic.js";
-export { IntervalClass, IntervalClass as IC };
+export * as IntervalClass from "./ic.js";
+export * as IC from "./ic.js";
