@@ -26,6 +26,38 @@
       "import": "./esm/index.js",
       "require": "./dist/cjs/index.js"
     },
+    "./MidiNoteNumber": {
+      "import": "./esm/mnn.js",
+      "require": "./dist/cjs/mnn.js"
+    },
+    "./PitchClass": {
+      "import": "./esm/pc.js",
+      "require": "./dist/cjs/pc.js"
+    },
+    "./PitchClassSet": {
+      "import": "./esm/pcs.js",
+      "require": "./dist/cjs/pcs.js"
+    },
+    "./PitchInterval": {
+      "import": "./esm/pi.js",
+      "require": "./dist/cjs/pi.js"
+    },
+    "./Semitones": {
+      "import": "./esm/semitones.js",
+      "require": "./dist/cjs/semitones.js"
+    },
+    "./PitchIntervalClass": {
+      "import": "./esm/pic.js",
+      "require": "./dist/cjs/pic.js"
+    },
+    "./PitchIntervalClassSet": {
+      "import": "./esm/pics.js",
+      "require": "./dist/cjs/pics.js"
+    },
+    "./IntervalClass": {
+      "import": "./esm/ic.js",
+      "require": "./dist/cjs/ic.js"
+    },
     "./package.json": "./package.json"
   },
   "main": "./cjs/index.js",
