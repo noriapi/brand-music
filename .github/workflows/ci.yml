@@ -49,6 +49,9 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Lint Package
+        run: pnpm lint:package
+
   test-deploy:
     name: Test website
     runs-on: ubuntu-latest
