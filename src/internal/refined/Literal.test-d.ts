@@ -1,6 +1,6 @@
 import { describe, expectTypeOf, it } from "vitest";
 
-import { Negate } from "./literal.js";
+import { Negate } from "./Literal.js";
 
 describe("Negate", () => {
   it("should negate", () => {

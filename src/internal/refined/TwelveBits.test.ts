@@ -14,7 +14,7 @@ import {
   union,
   Value,
   values,
-} from "./twelve-bits.js";
+} from "./TwelveBits.js";
 
 const arbValue = () => fc.integer({ min: 0, max: 11 }).map((v) => v as Value);
 const arbTwelveBits = () =>

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { mod } from "./util.js";
+import { mod } from "./utils.js";
 
 describe("mod", () => {
   it("should return valid value", () => {

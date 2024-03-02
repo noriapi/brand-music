@@ -1,6 +1,6 @@
 import { describe, expectTypeOf, it } from "vitest";
 
-import { makeAbs, NonNegative } from "./non-negative.js";
+import { makeAbs, NonNegative } from "./NonNegative.js";
 
 describe("makeAbs", () => {
   it("should return type have provided value", () => {
