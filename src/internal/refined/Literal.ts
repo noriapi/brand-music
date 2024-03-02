@@ -1,5 +1,5 @@
-import { mod } from "../util.js";
-import { Int } from "./int.js";
+import { mod } from "../utils.js";
+import { Int } from "./Int.js";
 
 export type Negate<N extends number> = N extends 0
   ? 0

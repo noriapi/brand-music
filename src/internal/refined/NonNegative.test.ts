@@ -1,7 +1,7 @@
 import { fc, it } from "@fast-check/vitest";
 import { describe, expect } from "vitest";
 
-import { isNonNegative, makeAbs } from "./non-negative.js";
+import { isNonNegative, makeAbs } from "./NonNegative.js";
 
 describe("isNonNegative", () => {
   it.each([0, -0, 0.1, Number.POSITIVE_INFINITY])(

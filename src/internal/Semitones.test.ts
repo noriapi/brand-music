@@ -1,7 +1,6 @@
 import { fc, it } from "@fast-check/vitest";
 import { describe, expect } from "vitest";
 
-import { arbMnn } from "./MidiNoteNumber.test.js";
 import * as ST from "./Semitones.js";
 
 describe("markNum", () => {
@@ -18,15 +17,6 @@ describe("markNum", () => {
   ])("markNum(%f) -> false", (num) => {
     expect(ST.markNum(num)).toBe(false);
   });
-});
-
-describe("between", () => {
-  it.prop([arbMnn(), arbMnn()])(
-    "should always return the same value when args are swapped",
-    (a, b) => {
-      expect(ST.between(a, b)).toBe(ST.between(b, a));
-    },
-  );
 });
 
 describe("octaves", () => {

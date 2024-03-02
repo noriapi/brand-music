@@ -1,5 +1,5 @@
-import { Int, isInt } from "./int.js";
-import { isNonNegative, NonNegative } from "./non-negative.js";
+import { Int, isInt } from "./Int.js";
+import { isNonNegative, NonNegative } from "./NonNegative.js";
 
 export type NonNegativeInt = Int & NonNegative;
 

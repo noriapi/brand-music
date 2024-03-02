@@ -1,5 +1,5 @@
-import { all, RangedNat } from "./literal.js";
-import { isNonNegativeInt, NonNegativeInt } from "./non-negative-int.js";
+import { all, RangedNat } from "./Literal.js";
+import { isNonNegativeInt, NonNegativeInt } from "./NonNegativeInt.js";
 
 export interface TwelveBitsBrand {
   readonly TwelveBits: unique symbol;

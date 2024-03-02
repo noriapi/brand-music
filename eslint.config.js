@@ -20,12 +20,10 @@ export default tseslint.config(
     },
     plugins: {
       "simple-import-sort": simpleImportSort,
-      tsdoc: tsdoc,
     },
     rules: {
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
-      "tsdoc/syntax": "warn",
       "no-console": "error",
     },
   },
@@ -33,6 +31,12 @@ export default tseslint.config(
     files: ["src/**/*"],
     languageOptions: {
       globals: { ...globals.es2021 },
+    },
+    plugins: {
+      tsdoc: tsdoc,
+    },
+    rules: {
+      "tsdoc/syntax": "warn",
     },
   },
   {
