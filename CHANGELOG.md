@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.2](https://github.com/noriapi/brand-music/compare/v0.11.1...v0.11.2) (2024-03-02)
+
+
+### Bug Fixes
+
+* fix `PI.from` return type to `PitchInterval` ([#155](https://github.com/noriapi/brand-music/issues/155)) ([b3c3116](https://github.com/noriapi/brand-music/commit/b3c3116e8595d49dfbaab927c05308a2c5883fd1))
+
 ## [0.11.1](https://github.com/noriapi/brand-music/compare/v0.11.0...v0.11.1) (2024-03-02)
 
 
