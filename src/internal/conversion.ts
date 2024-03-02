@@ -46,7 +46,8 @@ export const picBetweenPc = (from: PC.PitchClass, to: PC.PitchClass) =>
  *
  * @example
  * ```ts
- * import { PI, PIC } from "brand-music";
+ * import * as PI from "brand-music/PitchInterval";
+ * import * as PIC from "brand-music/PitchIntervalClass";
  *
  * const picOfPi = PIC.fromPi(PI.from(-2)); // 10
  * const picOfSemitones = PIC.fromSemitones(PI.semitones(PI.from(-2))); // 2
