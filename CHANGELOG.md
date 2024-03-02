@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.1](https://github.com/noriapi/brand-music/compare/v0.11.0...v0.11.1) (2024-03-02)
+
+
+### Bug Fixes
+
+* remove circular dependencies ([#153](https://github.com/noriapi/brand-music/issues/153)) ([7979d83](https://github.com/noriapi/brand-music/commit/7979d836acf0027a5b00418a30a7192a7e1adbaf))
+
 ## [0.11.0](https://github.com/noriapi/brand-music/compare/v0.10.0...v0.11.0) (2024-03-01)
 
 
