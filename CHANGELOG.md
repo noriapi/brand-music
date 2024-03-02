@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.3](https://github.com/noriapi/brand-music/compare/v0.11.2...v0.11.3) (2024-03-02)
+
+
+### Bug Fixes
+
+* `*Checked` functions not to return undefined when result is 0 ([#158](https://github.com/noriapi/brand-music/issues/158)) ([f5b5d88](https://github.com/noriapi/brand-music/commit/f5b5d88ae2f28d0ac93222c289be52b8b34fa875))
+
 ## [0.11.2](https://github.com/noriapi/brand-music/compare/v0.11.1...v0.11.2) (2024-03-02)
 
 
