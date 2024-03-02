@@ -29,7 +29,7 @@ type PartialPitchInterval =
   | 0
   | Negate<PartialPositivePitchInterval>;
 
-export const from = (v: Shape | PartialPitchInterval) => v;
+export const from = (v: Shape | PartialPitchInterval) => v as PitchInterval;
 export const fromNum = (v: number) => (markNum(v) ? v : undefined);
 export const fromNumRound = (v: number) => from(I.makeRound(v));
 export const fromNumTrunc = (v: number) => from(I.makeTrunc(v));
