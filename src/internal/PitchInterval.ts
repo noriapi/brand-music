@@ -35,31 +35,25 @@ export const fromNumRound = (v: number) => from(I.makeRound(v));
 export const fromNumTrunc = (v: number) => from(I.makeTrunc(v));
 export const fromUnknown = (v: unknown) => (markUnknown(v) ? v : undefined);
 
+const fromUndefinedable = (v?: Int | undefined) => (v != null ? from(v) : v);
+
 // operators
 export const add = (a: PitchInterval, b: PitchInterval) => from(I.add(a, b));
-export const addChecked = (a: PitchInterval, b: PitchInterval) => {
-  const v = I.addChecked(a, b);
-  return v ? from(v) : v;
-};
+export const addChecked = (a: PitchInterval, b: PitchInterval) =>
+  fromUndefinedable(I.addChecked(a, b));
 
 export const sub = (a: PitchInterval, b: PitchInterval) => from(I.sub(a, b));
-export const subChecked = (a: PitchInterval, b: PitchInterval) => {
-  const v = I.subChecked(a, b);
-  return v ? from(v) : v;
-};
+export const subChecked = (a: PitchInterval, b: PitchInterval) =>
+  fromUndefinedable(I.subChecked(a, b));
 
 export const mul = (a: PitchInterval, b: Int) => from(I.mul(a, b));
-export const mulChecked = (a: PitchInterval, b: PitchInterval) => {
-  const v = I.mulChecked(a, b);
-  return v ? from(v) : v;
-};
+export const mulChecked = (a: PitchInterval, b: PitchInterval) =>
+  fromUndefinedable(I.mulChecked(a, b));
 export const mulRound = (a: PitchInterval, b: number) => from(I.mulRound(a, b));
 export const mulTrunc = (a: PitchInterval, b: number) => from(I.mulTrunc(a, b));
 
-export const divChecked = (a: PitchInterval, b: PitchInterval) => {
-  const v = I.divChecked(a, b);
-  return v ? from(v) : v;
-};
+export const divChecked = (a: PitchInterval, b: PitchInterval) =>
+  fromUndefinedable(I.divChecked(a, b));
 export const divRound = (a: PitchInterval, b: number) => from(I.divRound(a, b));
 export const divTrunc = (a: PitchInterval, b: number) => from(I.divTrunc(a, b));
 
