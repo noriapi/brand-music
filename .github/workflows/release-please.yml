@@ -64,16 +64,14 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-  deploy-doc:
-    name: Deploy to GitHub Pages
+  build-doc:
+    name: Build documents
     needs: [release-please, publish]
     if: ${{ needs.release-please.outputs.release_created }}
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: website
-    permissions:
-      contents: write
 
     steps:
       - uses: actions/checkout@v4
@@ -113,8 +111,23 @@ jobs:
       - name: Build website
         run: pnpm build
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./website/build
+          path: website/build
+
+  deploy-doc:
+    name: Deploy to GitHub Pages
+    needs: [build-doc]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -32,7 +32,7 @@ const config: Config = {
       "docusaurus-plugin-typedoc",
       {
         entryPoints: ["../src/index.ts"],
-        tsconfig: "../tsconfig.esm.json",
+        tsconfig: "../tsconfig.json",
         out: ".",
         cleanOutputDir: true,
       },
