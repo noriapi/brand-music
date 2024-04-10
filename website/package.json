@@ -29,7 +29,7 @@
     "@docusaurus/theme-classic": "^3.2.1",
     "@docusaurus/tsconfig": "^3.2.1",
     "@docusaurus/types": "^3.2.1",
-    "@types/node": "^20.12.6",
+    "@types/node": "^20.12.7",
     "docusaurus-plugin-typedoc": "^0.22.0",
     "typedoc": "^0.25.13",
     "typedoc-plugin-markdown": "^3.17.1",
@@ -48,9 +48,9 @@
     ]
   },
   "engines": {
-    "node": ">=20.12.1"
+    "node": ">=20.12.2"
   },
   "volta": {
-    "node": "20.12.1"
+    "node": "20.12.2"
   }
 }
