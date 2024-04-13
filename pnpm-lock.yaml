@@ -19,8 +19,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(vitest@1.5.0)
       dependency-cruiser:
-        specifier: ^16.3.0
-        version: 16.3.0
+        specifier: ^16.3.1
+        version: 16.3.1
       eslint:
         specifier: ^9.0.0
         version: 9.0.0
@@ -4609,8 +4609,8 @@ packages:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
     engines: {node: '>= 0.8'}
 
-  /dependency-cruiser@16.3.0:
-    resolution: {integrity: sha512-6xncf7dssM3dk2vBxHN2MxaLq8bkclw6li8iYfCrjamp0OzMwiTsQvH+y4VeAhyPo5LjsyDB6wFu9pxQbRDcqA==}
+  /dependency-cruiser@16.3.1:
+    resolution: {integrity: sha512-ZwhVjKrCr3Fk7Vb5FfDvkcAcqxttmbb26C9fjuJJVhqDGdgtJQnQ1k1sRY9UbgIBDmMlBTn8/Ccs2b/+TlqOSQ==}
     engines: {node: ^18.17||>=20}
     hasBin: true
     dependencies:
@@ -4639,7 +4639,7 @@ packages:
       semver-try-require: 6.2.3
       teamcity-service-messages: 0.1.14
       tsconfig-paths-webpack-plugin: 4.1.0
-      watskeburt: 4.0.1
+      watskeburt: 4.0.2
       wrap-ansi: 9.0.0
     dev: true
 
@@ -9795,8 +9795,8 @@ packages:
       glob-to-regexp: 0.4.1
       graceful-fs: 4.2.11
 
-  /watskeburt@4.0.1:
-    resolution: {integrity: sha512-eFPqWivN5fgEQrj7oVrYVW7sEKCEzuWpYGxOVRJF3E2ReERrQgS9T6fGScTB7ngk2kvw1bITQ/KznUoT4kvhKw==}
+  /watskeburt@4.0.2:
+    resolution: {integrity: sha512-w7X8AGrBZExP5/3e3c1X/CUY8Yod/aiAazQCvrg7n8Un6piD+NFFK926G15zRq4+wu0XAEWpSsZ4C+fEfVOCYw==}
     engines: {node: ^18||>=20}
     hasBin: true
     dev: true
