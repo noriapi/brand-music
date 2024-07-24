@@ -19,8 +19,8 @@ importers:
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.0)
       dependency-cruiser:
-        specifier: ^16.3.9
-        version: 16.3.9
+        specifier: ^16.3.10
+        version: 16.3.10
       eslint:
         specifier: ^9.7.0
         version: 9.7.0
@@ -4718,7 +4718,7 @@ packages:
       postcss-modules-scope: 3.2.0(postcss@8.4.38)
       postcss-modules-values: 4.0.0(postcss@8.4.38)
       postcss-value-parser: 4.2.0
-      semver: 7.6.2
+      semver: 7.6.3
       webpack: 5.91.0(esbuild@0.23.0)
 
   /css-minimizer-webpack-plugin@5.0.1(clean-css@5.3.3)(esbuild@0.23.0)(webpack@5.91.0):
@@ -4992,8 +4992,8 @@ packages:
     resolution: {integrity: sha512-g7nH6P6dyDioJogAAGprGpCtVImJhpPk/roCzdb3fIh61/s/nPsfR6onyMwkCAR/OlC3yBC0lESvUoQEAssIrw==}
     engines: {node: '>= 0.8'}
 
-  /dependency-cruiser@16.3.9:
-    resolution: {integrity: sha512-rtYBXmwYGcuwvGHI+gqXMyXXKjJ3d8nfg6hdwOtgm3Z7VHczuDwUJTg1PDQNzhWLWjMKzV5igAIpuxXOhslyZA==}
+  /dependency-cruiser@16.3.10:
+    resolution: {integrity: sha512-WkCnibHBfvaiaQ+S46LZ6h4AR6oj42Vsf5/0Vgtrwdwn7ZekMJdZ/ALoTwNp/RaGlKW+MbV/fhSZOvmhAWVWzQ==}
     engines: {node: ^18.17||>=20}
     hasBin: true
     dependencies:
@@ -5004,12 +5004,11 @@ packages:
       acorn-walk: 8.3.3
       ajv: 8.17.1
       commander: 12.1.0
-      enhanced-resolve: 5.17.0
+      enhanced-resolve: 5.17.1
       ignore: 5.3.1
       interpret: 3.1.1
       is-installed-globally: 1.0.0
       json5: 2.2.3
-      lodash: 4.17.21
       memoize: 10.0.0
       picocolors: 1.0.1
       picomatch: 4.0.2
@@ -5183,8 +5182,8 @@ packages:
       graceful-fs: 4.2.11
       tapable: 2.2.1
 
-  /enhanced-resolve@5.17.0:
-    resolution: {integrity: sha512-dwDPwZL0dmye8Txp2gzFmA6sxALaSvdRDjPH0viLcKrtlOL3tw62nWWweVD1SdILDTJrbrL6tdWVN58Wo6U3eA==}
+  /enhanced-resolve@5.17.1:
+    resolution: {integrity: sha512-LMHl3dXhTcfv8gM4kEzIUeTQ+7fpdA0l2tUf34BddXPkz2A5xJ5L/Pchd5BL6rdccM9QGvu0sWZzK1Z1t4wwyg==}
     engines: {node: '>=10.13.0'}
     dependencies:
       graceful-fs: 4.2.11
@@ -6904,7 +6903,7 @@ packages:
     resolution: {integrity: sha512-hXdUTZYIVOt1Ex//jAQi+wTZZpUpwBj/0QsOzqegb3rGMMeJiSEu5xLHnYfBrRV4RH2+OCSOO95Is/7x1WJ4bw==}
     engines: {node: '>=10'}
     dependencies:
-      semver: 7.6.2
+      semver: 7.6.3
     dev: true
 
   /markdown-extensions@2.0.0:
@@ -8145,7 +8144,7 @@ packages:
       cosmiconfig: 8.3.6(typescript@5.5.4)
       jiti: 1.21.0
       postcss: 8.4.38
-      semver: 7.6.2
+      semver: 7.6.3
       webpack: 5.91.0(esbuild@0.23.0)
     transitivePeerDependencies:
       - typescript
@@ -9148,11 +9147,6 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  /semver@7.6.2:
-    resolution: {integrity: sha512-FNAIBWCx9qcRhoHcgcJ0gvU7SN1lYU2ZXuSfl04bSC5OpvDHFyJCjdNHomPXxjQlCBU67YW64PzY7/VIEH7F2w==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   /semver@7.6.3:
     resolution: {integrity: sha512-oVekP1cKtI+CTDvHWYFUcMtsK/00wmAEfyqKfNdARm8u1wNVhSgaX7A8d4UuIlUI5e84iEwOhs7ZPYRmzU9U6A==}
     engines: {node: '>=10'}
@@ -9728,7 +9722,7 @@ packages:
     engines: {node: '>=10.13.0'}
     dependencies:
       chalk: 4.1.2
-      enhanced-resolve: 5.17.0
+      enhanced-resolve: 5.17.1
       tsconfig-paths: 4.2.0
     dev: true
 
@@ -9992,7 +9986,7 @@ packages:
       is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.1.0
-      semver: 7.6.2
+      semver: 7.6.3
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
 
