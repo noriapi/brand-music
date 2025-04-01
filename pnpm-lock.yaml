@@ -13,8 +13,8 @@ importers:
   .:
     devDependencies:
       '@fast-check/vitest':
-        specifier: ^0.1.0
-        version: 0.1.1(vitest@1.6.1)
+        specifier: ^0.2.0
+        version: 0.2.0(vitest@1.6.1)
       '@vitest/coverage-v8':
         specifier: ^1.6.0
         version: 1.6.0(vitest@1.6.1)
@@ -2799,10 +2799,10 @@ packages:
     dependencies:
       levn: 0.4.1
 
-  /@fast-check/vitest@0.1.1(vitest@1.6.1):
-    resolution: {integrity: sha512-hxBUieogCiugTY0RZTBcFRfCVja4CxLMXwCKXyf6OtP65gGWoRI17iu/SwcGZp2hzlpxiSIgHFYfQXBEx+jxfQ==}
+  /@fast-check/vitest@0.2.0(vitest@1.6.1):
+    resolution: {integrity: sha512-oVklBEHMh0u55bWRz2BQwQjDTT/QzAQh9m14zNLj6iq/UdBn2+C/GTwUsUVCfiCYjDu2ajMEeqP1ZGWCGRJ+Yw==}
     peerDependencies:
-      vitest: '>=0.28.1 <1.0.0 || ^1'
+      vitest: ^1 || ^2 || ^3
     dependencies:
       fast-check: 3.18.0
       vitest: 1.6.1
