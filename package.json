@@ -149,7 +149,7 @@
     "vitest": "^1.6.0"
   },
   "volta": {
-    "node": "20.18.1"
+    "node": "22.15.1"
   },
   "publishConfig": {
     "access": "public"
