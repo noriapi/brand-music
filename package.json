@@ -157,7 +157,7 @@
   "pnpm": {
     "overrides": {
       "vite@>=5.0.0 <=5.0.11": ">=5.4.21",
-      "follow-redirects@<1.15.4": ">=1.15.4"
+      "follow-redirects@<1.15.4": ">=1.16.0"
     }
   }
 }
